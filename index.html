@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Международная конференция Нотариальной палаты КР — Бишкек, 6–8 августа 2026" />
+    <title>Конференция НПКР 2026 | Бишкек</title>
+    <style>
+        :root {
+            --bg: #07111f;
+            --bg2: #0c1628;
+            --panel: rgba(14, 22, 40, .72);
+            --panel2: rgba(10, 16, 29, .9);
+            --line: rgba(201, 168, 76, .18);
+            --gold: #c9a84c;
+            --gold2: #e2c47a;
+            --text: #f5efe6;
+            --muted: rgba(245, 239, 230, .74);
+            --muted2: rgba(245, 239, 230, .58);
+            --radius: 24px;
+            --shadow: 0 22px 70px rgba(0, 0, 0, .34);
+            --container: 1180px;
+            --trans: .32s cubic-bezier(.2, .8, .2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at 20% 10%, rgba(201, 168, 76, .10), transparent 26%),
+                radial-gradient(circle at 80% 15%, rgba(80, 120, 220, .10), transparent 28%),
+                linear-gradient(180deg, var(--bg) 0%, #060b15 100%);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        button,
+        input,
+        textarea {
+            font: inherit
+        }
+
+        .container {
+            width: min(var(--container), calc(100% - 40px));
+            margin: 0 auto
+        }
+
+        .section {
+            padding: 88px 0
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            font-size: 11px;
+            color: var(--gold);
+        }
+
+        .eyebrow::after {
+            content: "";
+            height: 1px;
+            width: 40px;
+            background: linear-gradient(90deg, var(--gold), transparent)
+        }
+
+        .section-title,
+        .s-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            letter-spacing: -.02em;
+            line-height: 1.06;
+            font-size: clamp(34px, 5vw, 62px);
+            margin: 14px 0 16px;
+        }
+
+        .section-lead,
+        .section-text,
+        .s-desc {
+            color: var(--muted);
+            max-width: 860px;
+            font-size: 16px
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 80;
+            backdrop-filter: blur(16px);
+            background: linear-gradient(180deg, rgba(7, 12, 21, .92), rgba(7, 12, 21, .6));
+            border-bottom: 1px solid rgba(201, 168, 76, .10)
+        }
+
+        .topbar__inner {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px
+        }
+
+        .topbar__org {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .topbar__right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: flex-end
+        }
+
+        .topbar__tel {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold2);
+            font-size: 13px;
+            white-space: nowrap
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+            border-radius: 999px;
+            background: rgba(9, 14, 25, .7);
+            border: 1px solid rgba(201, 168, 76, .18)
+        }
+
+        .lang-btn {
+            border: 0;
+            background: transparent;
+            color: rgba(245, 239, 230, .55);
+            padding: 9px 14px;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all var(--trans);
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: .12em
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, var(--gold), #a77b2a);
+            color: #120f09
+        }
+
+        .nav {
+            position: sticky;
+            top: 74px;
+            z-index: 70;
+            background: linear-gradient(180deg, rgba(6, 10, 18, .82), rgba(6, 10, 18, .62));
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(201, 168, 76, .08)
+        }
+
+        .nav__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            min-height: 66px
+        }
+
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0
+        }
+
+        .nav__seal {
+            width: 42px;
+            height: 42px;
+            flex: 0 0 auto
+        }
+
+        .nav__logo-text {
+            min-width: 0
+        }
+
+        .nav__logo-text strong,
+        .footer__brand strong {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .18em;
+            color: var(--gold2);
+            font-size: 12px
+        }
+
+        .nav__logo-text span,
+        .footer__brand span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .10em;
+            color: var(--muted2);
+            font-size: 11px
+        }
+
+        .nav__links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        .nav__links a {
+            color: var(--muted);
+            font-size: 13px;
+            transition: color var(--trans)
+        }
+
+        .nav__links a:hover {
+            color: var(--gold2)
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            transition: all var(--trans);
+            white-space: nowrap;
+            border: 1px solid transparent
+        }
+
+        .btn--bronze {
+            background: linear-gradient(135deg, var(--gold), #a77b2a);
+            color: #120f09;
+            box-shadow: 0 10px 24px rgba(201, 168, 76, .22)
+        }
+
+        .btn--bronze:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 32px rgba(201, 168, 76, .28)
+        }
+
+        .btn--outline-bronze {
+            border-color: rgba(201, 168, 76, .36);
+            color: var(--gold2);
+            background: rgba(201, 168, 76, .04)
+        }
+
+        .btn--outline-bronze:hover {
+            background: rgba(201, 168, 76, .09)
+        }
+
+        .nav__burger {
+            display: none;
+            background: none;
+            border: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px
+        }
+
+        .nav__burger span {
+            display: block;
+            height: 2px;
+            background: var(--gold2);
+            margin: 6px 0;
+            border-radius: 99px
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            padding: 48px 0 56px;
+            display: flex;
+            align-items: stretch
+        }
+
+        .hero-video-bg,
+        .hero-video-fallback {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none
+        }
+
+        .hero-video-fallback {
+            background: linear-gradient(135deg, #08101f 0%, #0d1729 100%)
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background:
+                radial-gradient(ellipse at 50% 70%, rgba(28, 45, 90, .95) 0%, rgba(28, 45, 90, 0) 55%),
+                radial-gradient(ellipse at 15% 22%, rgba(201, 168, 76, .12) 0%, rgba(201, 168, 76, 0) 48%),
+                radial-gradient(ellipse at 86% 18%, rgba(104, 136, 220, .14) 0%, rgba(104, 136, 220, 0) 40%),
+                linear-gradient(180deg, rgba(5, 9, 16, .15), rgba(5, 9, 16, .82));
+            z-index: .5;
+            pointer-events: none
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: .5;
+            pointer-events: none;
+            opacity: .7;
+            background-image:
+                radial-gradient(circle at 12% 62%, rgba(255, 255, 255, .18) 0 1px, transparent 1.5px),
+                radial-gradient(circle at 24% 78%, rgba(255, 255, 255, .13) 0 1px, transparent 1.5px),
+                radial-gradient(circle at 36% 66%, rgba(201, 168, 76, .28) 0 1.5px, transparent 2px),
+                radial-gradient(circle at 52% 82%, rgba(255, 255, 255, .13) 0 1px, transparent 1.5px),
+                radial-gradient(circle at 72% 67%, rgba(201, 168, 76, .26) 0 1.4px, transparent 2px),
+                radial-gradient(circle at 88% 76%, rgba(255, 255, 255, .12) 0 1px, transparent 1.5px);
+            animation: floatGlow 8s ease-in-out infinite alternate
+        }
+
+        @keyframes floatGlow {
+            from {
+                opacity: .55;
+                transform: translateY(0)
+            }
+
+            to {
+                opacity: .92;
+                transform: translateY(-8px)
+            }
+        }
+
+        .hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(6, 10, 18, .20), rgba(6, 10, 18, .78));
+            z-index: 1
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2
+        }
+
+        .hero-grid {
+            min-height: calc(100vh - 140px);
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 28px;
+            align-items: end
+        }
+
+        .hero-copy {
+            padding: 48px 0 0;
+            max-width: 760px
+        }
+
+        .kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(12, 18, 31, .58);
+            border: 1px solid rgba(201, 168, 76, .18);
+            color: var(--gold2);
+            font-size: 11px;
+            letter-spacing: .18em;
+            text-transform: uppercase
+        }
+
+        .hero-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            font-size: clamp(42px, 6.7vw, 62px);
+            line-height: .95;
+            letter-spacing: -.03em;
+            margin: 18px 0 18px
+        }
+
+        .hero-sub {
+            font-size: 17px;
+            color: var(--muted);
+            max-width: 700px;
+            margin-bottom: 28px
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(201, 168, 76, .18);
+            background: rgba(12, 18, 31, .48);
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .cta-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .hero-card {
+            align-self: center;
+            padding: 32px;
+            text-align: center;
+            border-radius: var(--radius);
+            background: rgba(13, 20, 36, .70);
+            backdrop-filter: blur(18px);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow)
+        }
+
+        .hero-card__icon {
+            font-size: 64px;
+            margin-bottom: 16px
+        }
+
+        .hero-card__title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 12px
+        }
+
+        .hero-card__text {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .stats {
+            padding: 26px 0;
+            background: linear-gradient(180deg, rgba(7, 12, 21, .25), rgba(7, 12, 21, .65));
+            border-top: 1px solid rgba(201, 168, 76, .08);
+            border-bottom: 1px solid rgba(201, 168, 76, .08)
+        }
+
+        .stats__grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            align-items: center
+        }
+
+        .stats__item {
+            text-align: center;
+            padding: 10px 0
+        }
+
+        .stats__item strong {
+            display: block;
+            font-size: 28px;
+            color: var(--gold2);
+            letter-spacing: .02em
+        }
+
+        .stats__item span {
+            display: block;
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .stats__div {
+            height: 30px;
+            width: 1px;
+            background: rgba(201, 168, 76, .14);
+            justify-self: center
+        }
+
+        .s-head {
+            margin-bottom: 28px
+        }
+
+        .about,
+        .speakers,
+        .participants,
+        .program,
+        .guest,
+        .register,
+        .media,
+        .partners,
+        .contacts {
+            position: relative
+        }
+
+        .about__grid,
+        .contacts__grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 28px;
+            align-items: start
+        }
+
+        .about__text,
+        .contacts__info,
+        .reg-wrap,
+        .panel,
+        .card,
+        .speaker-card,
+        .coord-card,
+        .partner-card {
+            border-radius: var(--radius);
+            background: var(--panel);
+            backdrop-filter: blur(18px);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow)
+        }
+
+        .about__text,
+        .panel,
+        .card,
+        .coord-card,
+        .partner-card {
+            padding: 28px
+        }
+
+        .about__text p {
+            color: var(--muted);
+            margin-bottom: 14px
+        }
+
+        .about__topics {
+            display: grid;
+            gap: 12px;
+            margin-top: 18px
+        }
+
+        .about__topic {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            padding: 12px 14px;
+            border-radius: 14px;
+            background: rgba(201, 168, 76, .05);
+            border: 1px solid rgba(201, 168, 76, .08)
+        }
+
+        .about__topic svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 auto;
+            margin-top: 2px
+        }
+
+        .about__img-col {
+            display: grid;
+            gap: 16px
+        }
+
+        .about__img-wrap {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            border: 1px solid var(--line);
+            min-height: 320px
+        }
+
+        .about__img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .about__img-badge {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            background: rgba(7, 12, 21, .82);
+            border: 1px solid rgba(201, 168, 76, .22);
+            padding: 12px 14px;
+            border-radius: 18px;
+            text-align: center
+        }
+
+        .about__img-badge-date {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--gold2);
+            line-height: 1
+        }
+
+        .about__img-badge-month {
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--muted)
+        }
+
+        .about__venue-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 18px;
+            border-radius: 18px;
+            background: rgba(12, 18, 31, .54);
+            border: 1px solid rgba(201, 168, 76, .12)
+        }
+
+        .about__venue-card strong {
+            display: block;
+            font-size: 14px
+        }
+
+        .about__venue-card span {
+            display: block;
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .speakers__grid,
+        .country-grid,
+        .partners__grid,
+        .gallery {
+            display: grid;
+            gap: 18px
+        }
+
+        .speakers__grid {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .speaker-card {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px
+        }
+
+        .speaker-card__photo {
+            aspect-ratio: 1/1;
+            border-radius: 18px;
+            background: rgba(201, 168, 76, .05);
+            border: 1px dashed rgba(201, 168, 76, .20);
+            display: grid;
+            place-items: center;
+            position: relative;
+            overflow: hidden
+        }
+
+        .speaker-card__photo svg {
+            width: 70%;
+            opacity: .65
+        }
+
+        .speaker-card__tba {
+            position: absolute;
+            inset: auto 14px 14px auto;
+            padding: 8px 10px;
+            border-radius: 999px;
+            background: rgba(7, 12, 21, .76);
+            border: 1px solid rgba(201, 168, 76, .18);
+            color: var(--gold2);
+            font-size: 11px;
+            letter-spacing: .14em
+        }
+
+        .speaker-card__info strong,
+        .coord-name,
+        .partner-card__name {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 6px
+        }
+
+        .speaker-card__info p,
+        .coord-role,
+        .partner-card__placeholder,
+        .cb p,
+        .g-item figcaption {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .speaker-card__country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--gold2)
+        }
+
+        .participants {
+            background: linear-gradient(180deg, rgba(5, 9, 16, .28), rgba(5, 9, 16, .08))
+        }
+
+        .country-grid {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .country-card {
+            padding: 18px;
+            border-radius: 18px;
+            border: 1px solid rgba(201, 168, 76, .12);
+            background: rgba(12, 18, 31, .52);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-height: 68px
+        }
+
+        .country-flag {
+            font-size: 22px
+        }
+
+        .country-name {
+            font-weight: 600;
+            color: var(--text)
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 24px 0 18px
+        }
+
+        .tab {
+            padding: 14px 18px;
+            border-radius: 18px;
+            background: rgba(201, 168, 76, .05);
+            border: 1px solid rgba(201, 168, 76, .16);
+            color: var(--muted);
+            cursor: pointer;
+            transition: all var(--trans);
+            text-align: left
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, var(--gold), #a77b2a);
+            color: #120f09;
+            border-color: transparent
+        }
+
+        .tab__num {
+            display: block;
+            font-weight: 800;
+            font-size: 14px
+        }
+
+        .tab__sub {
+            display: block;
+            font-size: 12px;
+            opacity: .84
+        }
+
+        .tab-panel {
+            display: none
+        }
+
+        .tab-panel.active {
+            display: block
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        th,
+        td {
+            padding: 16px;
+            border-top: 1px solid rgba(201, 168, 76, .12);
+            vertical-align: top;
+            font-size: 14px
+        }
+
+        th {
+            color: var(--gold2);
+            text-align: left;
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .tt,
+        .tv {
+            width: 18%;
+            color: var(--muted2)
+        }
+
+        .tt svg {
+            width: 16px;
+            height: 16px;
+            vertical-align: -3px;
+            margin-right: 6px
+        }
+
+        .te {
+            color: var(--text);
+            font-weight: 500
+        }
+
+        .te__note {
+            display: block;
+            color: var(--muted2);
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 2px
+        }
+
+        .tr-highlight td {
+            background: rgba(201, 168, 76, .04)
+        }
+
+        .coordinators {
+            margin-top: 12px
+        }
+
+        .coordinators__title {
+            font-size: 22px;
+            margin-bottom: 16px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400
+        }
+
+        .coord-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px
+        }
+
+        .coord-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: var(--gold2)
+        }
+
+        .wa-link .wa-icon {
+            flex: 0 0 auto
+        }
+
+        .big-tel {
+            font-size: 14px
+        }
+
+        .reg-wrap {
+            padding: 28px
+        }
+
+        .reg-form {
+            display: grid;
+            gap: 16px
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px
+        }
+
+        .fg {
+            display: flex;
+            flex-direction: column
+        }
+
+        .fg label {
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: var(--text)
+        }
+
+        .req {
+            color: var(--gold2)
+        }
+
+        .fg input,
+        .fg textarea {
+            padding: 13px 16px;
+            border-radius: 12px;
+            background: rgba(7, 12, 21, .46);
+            border: 1px solid rgba(201, 168, 76, .12);
+            color: var(--text);
+            outline: none;
+            transition: all var(--trans)
+        }
+
+        .fg input:focus,
+        .fg textarea:focus {
+            border-color: rgba(201, 168, 76, .5);
+            box-shadow: 0 0 0 3px rgba(201, 168, 76, .08)
+        }
+
+        .form-check {
+            margin-top: 4px
+        }
+
+        .chk-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .chk-label input {
+            display: none
+        }
+
+        .chk-box {
+            width: 20px;
+            height: 20px;
+            flex: 0 0 auto;
+            margin-top: 2px;
+            border-radius: 5px;
+            border: 1px solid rgba(201, 168, 76, .34);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--trans)
+        }
+
+        .chk-label input:checked~.chk-box {
+            background: linear-gradient(135deg, var(--gold), #a77b2a);
+            border-color: transparent;
+            color: #120f09
+        }
+
+        .form-submit {
+            margin-top: 6px
+        }
+
+        .form-ok {
+            padding: 16px 18px;
+            border-radius: 14px;
+            background: rgba(76, 175, 80, .12);
+            border: 1px solid rgba(76, 175, 80, .28);
+            color: #72d97b;
+            font-size: 14px
+        }
+
+        .gallery {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .g-item {
+            overflow: hidden;
+            border-radius: 18px;
+            border: 1px solid rgba(201, 168, 76, .12);
+            background: rgba(12, 18, 31, .5)
+        }
+
+        .g-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform var(--trans)
+        }
+
+        .g-item:hover img {
+            transform: scale(1.04)
+        }
+
+        .g-item figcaption {
+            padding: 12px 14px
+        }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 120;
+            display: grid;
+            place-items: center
+        }
+
+        .lightbox[hidden] {
+            display: none
+        }
+
+        .lb-bg {
+            position: absolute;
+            inset: 0;
+            background: rgba(2, 5, 10, .84)
+        }
+
+        .lb-body {
+            position: relative;
+            z-index: 1;
+            max-width: min(92vw, 1100px);
+            max-height: 86vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px
+        }
+
+        .lb-body img {
+            max-width: 100%;
+            max-height: 78vh;
+            border-radius: 18px;
+            box-shadow: var(--shadow)
+        }
+
+        .lb-cap {
+            color: #fff;
+            text-align: center;
+            max-width: 900px
+        }
+
+        .lb-close,
+        .lb-nav {
+            position: absolute;
+            z-index: 2;
+            border: 0;
+            background: rgba(255, 255, 255, .08);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            font-size: 26px;
+            cursor: pointer
+        }
+
+        .lb-close {
+            top: 20px;
+            right: 20px
+        }
+
+        .lb-nav {
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px
+        }
+
+        .lb-prev {
+            left: 20px
+        }
+
+        .lb-next {
+            right: 20px
+        }
+
+        .partners__grid {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .partner-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 170px;
+            text-align: center
+        }
+
+        .partner-card__placeholder {
+            width: 88px;
+            height: 88px;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+            background: rgba(201, 168, 76, .06);
+            border: 1px dashed rgba(201, 168, 76, .18);
+            color: var(--gold2)
+        }
+
+        .contacts__grid {
+            grid-template-columns: 1fr 1fr
+        }
+
+        .contacts__info {
+            padding: 22px;
+            display: grid;
+            gap: 14px
+        }
+
+        .cb {
+            padding: 16px 18px;
+            border-radius: 18px;
+            background: rgba(12, 18, 31, .52);
+            border: 1px solid rgba(201, 168, 76, .10)
+        }
+
+        .cb h4 {
+            margin-bottom: 8px;
+            font-size: 16px
+        }
+
+        .cb a,
+        .footer a,
+        .topbar__tel {
+            color: var(--gold2);
+            transition: color var(--trans)
+        }
+
+        .cb a:hover,
+        .footer a:hover,
+        .topbar__tel:hover {
+            color: #f0d18c
+        }
+
+        .map-container,
+        .contacts__map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border: 0;
+            border-radius: var(--radius);
+            overflow: hidden
+        }
+
+        .footer {
+            margin-top: 24px;
+            border-top: 1px solid rgba(201, 168, 76, .12);
+            background: linear-gradient(180deg, rgba(7, 12, 21, .48), rgba(5, 9, 16, .86))
+        }
+
+        .footer__main {
+            padding: 44px 0
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr 1fr;
+            gap: 20px
+        }
+
+        .footer__seal {
+            width: 50px;
+            height: 50px;
+            flex: 0 0 auto
+        }
+
+        .footer__brand {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start
+        }
+
+        .footer__brand strong {
+            margin-bottom: 4px
+        }
+
+        .footer__col h5 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: var(--gold2);
+            text-transform: uppercase;
+            letter-spacing: .12em
+        }
+
+        .footer__col ul {
+            list-style: none;
+            display: grid;
+            gap: 8px
+        }
+
+        .footer__bottom {
+            padding: 16px 0;
+            border-top: 1px solid rgba(201, 168, 76, .10);
+            color: var(--muted2);
+            font-size: 13px
+        }
+
+        .footer__bottom .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        @media (max-width:1100px) {
+
+            .hero-grid,
+            .about__grid,
+            .contacts__grid,
+            .footer__grid {
+                grid-template-columns: 1fr
+            }
+
+            .speakers__grid,
+            .gallery,
+            .partners__grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .country-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .stats__grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .stats__div {
+                display: none
+            }
+        }
+
+        @media (max-width:860px) {
+            .nav__burger {
+                display: block
+            }
+
+            .nav__links {
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                top: calc(100% + 10px);
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+                padding: 18px;
+                background: rgba(7, 12, 21, .96);
+                border: 1px solid rgba(201, 168, 76, .16);
+                border-radius: 20px;
+                display: none;
+                box-shadow: var(--shadow)
+            }
+
+            .nav__links.open {
+                display: flex
+            }
+
+            .nav__cta {
+                display: none
+            }
+
+            .hero {
+                padding-top: 28px
+            }
+
+            .hero-copy {
+                padding-top: 28px
+            }
+
+            .form-row,
+            .coord-grid {
+                grid-template-columns: 1fr
+            }
+
+            .speakers__grid,
+            .gallery,
+            .partners__grid,
+            .country-grid {
+                grid-template-columns: 1fr
+            }
+
+            .about__img-wrap {
+                min-height: 260px
+            }
+
+            .lb-prev,
+            .lb-next {
+                display: none
+            }
+        }
+
+
+
+
+
+
+
+
+
+.pdf-section .pdf-card{
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.pdf-toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+
+.pdf-toolbar__label{
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.pdf-frame-wrap{
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid rgba(201,168,76,.16);
+  background: #09111d;
+  aspect-ratio: 210 / 297;
+  min-height: 640px;
+}
+
+.pdf-frame{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  background:#fff;
+}
+
+.pdf-fallback{
+  display:none;
+  padding:16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 1100px){
+  .pdf-frame-wrap{
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 768px){
+  .pdf-section .pdf-card{
+    padding: 18px;
+  }
+
+  .pdf-frame-wrap{
+    min-height: 72vh;
+    aspect-ratio: auto;
+  }
+
+  .pdf-toolbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pdf-download{
+    width: 100%;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__org">
+                <img style="width: 30px;" src="/logo.png" alt="">
+                <span data-ru="Нотариальная палата Кыргызской Республики"
+                    data-en="Notarial Chamber of the Kyrgyz Republic"
+                    data-ky="Кыргыз Республикасынын Нотариалдык палатасы">Нотариальная палата Кыргызской
+                    Республики</span>
+            </div>
+            <div class="topbar__right">
+                <a href="https://wa.me/996705806640" class="topbar__tel" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="13" height="13">
+                        <path
+                            d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z" />
+                    </svg>
+                    +996 705 806 640
+                </a>
+                <div class="lang-switcher" role="group" aria-label="Язык / Language">
+                    <button class="lang-btn active" data-lang-btn="ru" onclick="setLang('ru')">РУС</button>
+                    <button class="lang-btn" data-lang-btn="en" onclick="setLang('en')">ENG</button>
+                    <button class="lang-btn" data-lang-btn="ky" onclick="setLang('ky')">КЫР</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#top" class="nav__logo">
+                <img style="width: 50px;" src="/logo.png" alt="">
+                <div class="nav__logo-text">
+                    <strong data-ru="НПКР" data-en="NPKR" data-ky="НПКР">НПКР</strong>
+                    <span data-ru="Конференция 2026" data-en="Conference 2026" data-ky="2026 Конференция">Конференция
+                        2026</span>
+                </div>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#about" data-ru="О конференции" data-en="About the conference"
+                        data-ky="Конференция жөнүндө">О конференции</a></li>
+                <li><a href="#speakers" data-ru="Спикеры" data-en="Speakers" data-ky="Спикерлер">Спикеры</a></li>
+                <li><a href="#program" data-ru="Программа" data-en="Program" data-ky="Программа">Программа</a></li>
+                <li><a href="#guest" data-ru="Гостям" data-en="For guests" data-ky="Меймандар үчүн">Гостям</a></li>
+                <li><a href="#contacts" data-ru="Контакты" data-en="Contacts" data-ky="Байланыш">Контакты</a></li>
+            </ul>
+            <a href="#register" class="btn btn--bronze nav__cta" data-ru="Регистрация" data-en="Register"
+                data-ky="Катталуу">Регистрация</a>
+            <button class="nav__burger" id="burger" aria-label="Меню"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero">
+            <video id="heroBgVideo" class="hero-video-bg" autoplay muted loop playsinline poster=""
+                style="filter: brightness(70%);">
+                <source src="jf.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-fallback" id="heroFallback"></div>
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <p class="kicker" data-ru="🔴 ЖИВОЕ СОБЫТИЕ" data-en="🔴 LIVE EVENT" data-ky="🔴 ТУУРУУ ОКУЯ">🔴
+                            ЖИВОЕ СОБЫТИЕ</p>
+                        <h1 class="hero-title"
+                            data-ru="Противодействие отмыванию денег: ключевая роль нотариальной профессии — практика, проблемы и международная обратная связь"
+                            data-en="Anti-money laundering: the key role of the notarial profession — practice, challenges and international feedback"
+                            data-ky="Акчаны адалдоого каршы аракеттенүү: нотариалдык кесиптин негизги ролу — практика, көйгөйлөр жана эл аралык кайтарым байланыш">
+                            Противодействие отмыванию денег: ключевая роль нотариальной профессии — практика, проблемы и
+                            международная обратная связь</h1>
+                        <p class="hero-sub"
+                            data-ru="Обсуждение актуальных вопросов нотариальной практики и международного сотрудничества"
+                            data-en="Discussion of current issues in notarial practice and international cooperation"
+                            data-ky="Нотариалдык практика жана эл аралык кызматташтык боюнча актуалдуу маселелерди талкуулоо">
+                            Обсуждение актуальных вопросов нотариальной практики и международного сотрудничества</p>
+                        <div class="hero-meta">
+                            <span class="pill" data-ru="📅 6–8 августа 2026" data-en="📅 August 6–8, 2026"
+                                data-ky="📅 2026-жылдын 6–8-августу">📅 6–8 августа 2026</span>
+                            <span class="pill" data-ru="📍 Бишкек, Кыргызстан" data-en="📍 Bishkek, Kyrgyzstan"
+                                data-ky="📍 Бишкек, Кыргызстан">📍 Бишкек, Кыргызстан</span>
+                            <span class="pill" data-ru="🏨 Отель Novotel" data-en="🏨 Novotel Hotel"
+                                data-ky="🏨 Novotel мейманканасы">🏨 Отель Novotel</span>
+                        </div>
+                        <div class="cta-row">
+                            <a href="#register" class="btn btn--bronze" data-ru="Зарегистрироваться"
+                                data-en="Register now" data-ky="Катталуу">Зарегистрироваться</a>
+                            <a href="#contacts" class="btn btn--outline-bronze" data-ru="Связаться" data-en="Contact us"
+                                data-ky="Байланышуу">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card__icon">🎓</div>
+                        <div class="hero-card__title" data-ru="Ведущее событие года" data-en="Leading event of the year"
+                            data-ky="Жылдын эң маанилүү окуясы">Ведущее событие года</div>
+                        <div class="hero-card__text" data-ru="300+ участников из 15 стран"
+                            data-en="300+ participants from 15 countries" data-ky="15 өлкөдөн 300+ катышуучу">300+
+                            участников из 15 стран</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container stats__grid">
+                <div class="stats__item"><strong>3</strong><span data-ru="дня программы" data-en="days of program"
+                        data-ky="программанын күнү">дня программы</span></div>
+                <div class="stats__div" aria-hidden="true"></div>
+                <div class="stats__item"><strong data-ru="СНГ+" data-en="CIS+" data-ky="КМШ+">СНГ+</strong><span
+                        data-ru="международный формат" data-en="international format"
+                        data-ky="эл аралык формат">международный формат</span></div>
+                <div class="stats__div" aria-hidden="true"></div>
+                <div class="stats__item"><strong data-ru="Серт." data-en="Cert." data-ky="Сертиф.">Серт.</strong><span
+                        data-ru="всем участникам" data-en="for all participants" data-ky="баардык катышуучуларга">всем
+                        участникам</span></div>
+                <div class="stats__div" aria-hidden="true"></div>
+                <div class="stats__item"><strong data-ru="Ала-Арча" data-en="Ala-Archa"
+                        data-ky="Ала-Арча">Ала-Арча</strong><span data-ru="экскурсионная программа"
+                        data-en="excursion program" data-ky="экскурсиялык программа">экскурсионная программа</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <p class="eyebrow" data-ru="О конференции" data-en="About the conference" data-ky="Конференция жөнүндө">
+                    О конференции</p>
+                <h2 class="section-title" data-ru="Задачи и цели" data-en="Goals and objectives"
+                    data-ky="Максаттар жана милдеттер">Задачи и цели</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p data-ru="Международная конференция Нотариальной палаты Кыргызской Республики объединяет ведущих специалистов в области нотариата и противодействия отмыванию преступных доходов из стран СНГ и дальнего зарубежья."
+                            data-en="The International Conference of the Notarial Chamber of the Kyrgyz Republic brings together leading experts in notary practice and anti-money-laundering from the CIS and beyond."
+                            data-ky="Кыргыз Республикасынын Нотариалдык палатасынын эл аралык конференциясы КМШ жана алыскы чет өлкөлөрдөн нотариат жана кылмыштуу кирешелерди адалдоого каршы аракеттенүү боюнча алдыңкы адистерди бириктирет.">
+                            Международная конференция Нотариальной палаты Кыргызской Республики объединяет ведущих
+                            специалистов в области нотариата и противодействия отмыванию преступных доходов из стран СНГ
+                            и дальнего зарубежья.</p>
+                        <p data-ru="В рамках конференции участники обменяются актуальными практиками, изучат международный опыт в сфере ПОД/ФТ и нотариальной деятельности, а также выработают совместные рекомендации."
+                            data-en="Within the conference, participants will exchange current practices, study international experience in AML/CFT and notarial activity, and develop joint recommendations."
+                            data-ky="Конференциянын алкагында катышуучулар актуалдуу тажрыйбалар менен бөлүшүп, ПОД/ФТ жана нотариалдык ишмердүүлүк боюнча эл аралык тажрыйбаны үйрөнүп, биргелешкен сунуштарды иштеп чыгышат.">
+                            В рамках конференции участники обменяются актуальными практиками, изучат международный опыт
+                            в сфере ПОД/ФТ и нотариальной деятельности, а также выработают совместные рекомендации.</p>
+                        <div class="about__topics">
+                            <div class="about__topic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><span data-ru="Противодействие легализации преступных доходов"
+                                    data-en="Anti-money laundering"
+                                    data-ky="Кылмыштуу кирешелерди адалдоого каршы аракеттенүү">Противодействие
+                                    легализации преступных доходов</span></div>
+                            <div class="about__topic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><span data-ru="Международный опыт нотариата в сфере ПОД/ФТ"
+                                    data-en="International notarial experience in AML/CFT"
+                                    data-ky="ПОД/ФТ жаатындагы нотариаттын эл аралык тажрыйбасы">Международный опыт
+                                    нотариата в сфере ПОД/ФТ</span></div>
+                            <div class="about__topic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><span data-ru="Актуальная практика нотариальных палат стран СНГ"
+                                    data-en="Current practices of CIS notarial chambers"
+                                    data-ky="КМШ өлкөлөрүнүн нотариалдык палаталарынын актуалдуу практикасы">Актуальная
+                                    практика нотариальных палат стран СНГ</span></div>
+                            <div class="about__topic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><span data-ru="Нотариат и цифровые технологии"
+                                    data-en="Notary and digital technologies"
+                                    data-ky="Нотариат жана санарип технологиялар">Нотариат и цифровые технологии</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__img-col">
+                        <div class="about__img-wrap">
+                            <img src="https://international-notary-3juq.bolt.host/images/2_A4h8PeK.width-800.png" alt="Ала-Арча" loading="lazy" />
+                            <div class="about__img-badge">
+                                <div class="about__img-badge-date">6–8</div>
+                                <div class="about__img-badge-month" data-ru="авг. 2026" data-en="Aug. 2026"
+                                    data-ky="авг. 2026">авг. 2026</div>
+                            </div>
+                        </div>
+                        <div class="about__venue-card">
+                            <svg style="width: 25px;" viewBox="0 0 22 22" fill="none" stroke="#A67C52" stroke-width="1.4" aria-hidden="true">
+                                <path d="M11 2C8 2 5 4.5 5 8c0 4.5 6 11 6 11s6-6.5 6-11c0-3.5-3-6-6-6z" />
+                                <circle cx="11" cy="8" r="2.2" />
+                            </svg>
+                            <div>
+                                <strong data-ru="Отель «Novotel Bishkek City Center»"
+                                    data-en="Novotel Bishkek City Center" data-ky="Novotel Bishkek City Center">Отель
+                                    «Novotel Bishkek City Center»</strong>
+                                <span data-ru="г. Бишкек, пр. Манаса, 16" data-en="16 Manas Ave., Bishkek"
+                                    data-ky="Бишкек ш., Манас пр., 16">г. Бишкек, пр. Манаса, 16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section speakers" id="speakers">
+            <div class="container">
+                <p class="eyebrow" data-ru="Эксперты" data-en="Experts" data-ky="Эксперттер">Эксперты</p>
+                <h2 class="section-title" data-ru="Спикеры конференции" data-en="Conference speakers"
+                    data-ky="Конференциянын спикерлери">Спикеры конференции</h2>
+                <div class="speakers__grid">
+                    <article class="speaker-card">
+                        <div class="speaker-card__photo"><svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8"
+                                    opacity="0.3" fill="none" />
+                            </svg><span class="speaker-card__tba">TBA</span></div>
+                        <div class="speaker-card__info"><strong data-ru="Спикер 1" data-en="Speaker 1"
+                                data-ky="Спикер 1">Спикер 1</strong>
+                            <p data-ru="Представитель нотариальной палаты"
+                                data-en="Representative of the notarial chamber" data-ky="Нотариалдык палатанын өкүлү">
+                                Представитель нотариальной палаты</p>
+                            <div class="speaker-card__country"><span>🇰🇬</span><span data-ru="Кыргызстан"
+                                    data-en="Kyrgyzstan" data-ky="Кыргызстан">Кыргызстан</span></div>
+                        </div>
+                    </article>
+                    <article class="speaker-card">
+                        <div class="speaker-card__photo"><svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8"
+                                    opacity="0.3" fill="none" />
+                            </svg><span class="speaker-card__tba">TBA</span></div>
+                        <div class="speaker-card__info"><strong data-ru="Спикер 2" data-en="Speaker 2"
+                                data-ky="Спикер 2">Спикер 2</strong>
+                            <p data-ru="Эксперт по ПОД/ФТ" data-en="AML/CFT expert" data-ky="ПОД/ФТ боюнча эксперт">
+                                Эксперт по ПОД/ФТ</p>
+                            <div class="speaker-card__country"><span>🇷🇺</span><span data-ru="Россия" data-en="Russia"
+                                    data-ky="Россия">Россия</span></div>
+                        </div>
+                    </article>
+                    <article class="speaker-card">
+                        <div class="speaker-card__photo"><svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8"
+                                    opacity="0.3" fill="none" />
+                            </svg><span class="speaker-card__tba">TBA</span></div>
+                        <div class="speaker-card__info"><strong data-ru="Спикер 3" data-en="Speaker 3"
+                                data-ky="Спикер 3">Спикер 3</strong>
+                            <p data-ru="Международный эксперт" data-en="International expert"
+                                data-ky="Эл аралык эксперт">Международный эксперт</p>
+                            <div class="speaker-card__country"><span>🇰🇿</span><span data-ru="Казахстан"
+                                    data-en="Kazakhstan" data-ky="Казакстан">Казахстан</span></div>
+                        </div>
+                    </article>
+                    <article class="speaker-card">
+                        <div class="speaker-card__photo"><svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3" />
+                                <path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8"
+                                    opacity="0.3" fill="none" />
+                            </svg><span class="speaker-card__tba">TBA</span></div>
+                        <div class="speaker-card__info"><strong data-ru="Спикер 4" data-en="Speaker 4"
+                                data-ky="Спикер 4">Спикер 4</strong>
+                            <p data-ru="Представитель FIU" data-en="FIU representative" data-ky="FIU өкүлү">
+                                Представитель FIU</p>
+                            <div class="speaker-card__country"><span>🇧🇾</span><span data-ru="Беларусь"
+                                    data-en="Belarus" data-ky="Беларусь">Беларусь</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section participants" id="participants">
+            <div class="container">
+                <p class="eyebrow" data-ru="География" data-en="Geography" data-ky="География">География</p>
+                <h2 class="section-title" data-ru="Международные участники" data-en="International participants"
+                    data-ky="Эл аралык катышуучулар">Международные участники</h2>
+                <p class="section-lead"
+                    data-ru="Конференция объединяет нотариусов, юристов и экспертов из стран Центральной Азии, СНГ и дальнего зарубежья для обмена опытом и укрепления международного сотрудничества."
+                    data-en="The conference brings together notaries, lawyers and experts from Central Asia, the CIS and beyond to exchange experience and strengthen international cooperation."
+                    data-ky="Конференция Борбордук Азия, КМШ жана алыскы чет өлкөлөрдөн келген нотариустарды, юристтерди жана эксперттерди тажрыйба алмашуу жана эл аралык кызматташтыкты бекемдөө үчүн бириктирет.">
+                    Конференция объединяет нотариусов, юристов и экспертов из стран Центральной Азии, СНГ и дальнего
+                    зарубежья для обмена опытом и укрепления международного сотрудничества.</p>
+                <div class="country-grid">
+                    <div class="country-card"><span class="country-flag">🇰🇬</span><span class="country-name"
+                            data-ru="Кыргызстан" data-en="Kyrgyzstan" data-ky="Кыргызстан">Кыргызстан</span></div>
+                    <div class="country-card"><span class="country-flag">🇷🇺</span><span class="country-name"
+                            data-ru="Россия" data-en="Russia" data-ky="Россия">Россия</span></div>
+                    <div class="country-card"><span class="country-flag">🇰🇿</span><span class="country-name"
+                            data-ru="Казахстан" data-en="Kazakhstan" data-ky="Казакстан">Казахстан</span></div>
+                    <div class="country-card"><span class="country-flag">🇺🇿</span><span class="country-name"
+                            data-ru="Узбекистан" data-en="Uzbekistan" data-ky="Өзбекстан">Узбекистан</span></div>
+                    <div class="country-card"><span class="country-flag">🇹🇯</span><span class="country-name"
+                            data-ru="Таджикистан" data-en="Tajikistan" data-ky="Тажикстан">Таджикистан</span></div>
+                    <div class="country-card"><span class="country-flag">🇧🇾</span><span class="country-name"
+                            data-ru="Беларусь" data-en="Belarus" data-ky="Беларусь">Беларусь</span></div>
+                    <div class="country-card"><span class="country-flag">🇦🇲</span><span class="country-name"
+                            data-ru="Армения" data-en="Armenia" data-ky="Армения">Армения</span></div>
+                    <div class="country-card"><span class="country-flag">🇦🇿</span><span class="country-name"
+                            data-ru="Азербайджан" data-en="Azerbaijan" data-ky="Азербайжан">Азербайджан</span></div>
+                    <div class="country-card"><span class="country-flag">🇲🇩</span><span class="country-name"
+                            data-ru="Молдова" data-en="Moldova" data-ky="Молдова">Молдова</span></div>
+                    <div class="country-card"><span class="country-flag">🇬🇪</span><span class="country-name"
+                            data-ru="Грузия" data-en="Georgia" data-ky="Грузия">Грузия</span></div>
+                    <div class="country-card"><span class="country-flag">🇹🇲</span><span class="country-name"
+                            data-ru="Туркменистан" data-en="Turkmenistan" data-ky="Түркмөнстан">Туркменистан</span>
+                    </div>
+                    <div class="country-card"><span class="country-flag">🇺🇦</span><span class="country-name"
+                            data-ru="Украина" data-en="Ukraine" data-ky="Украина">Украина</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section program" id="program">
+            <div class="container">
+                <p class="eyebrow" data-ru="Расписание" data-en="Schedule" data-ky="Иш тартиби">Расписание</p>
+                <h2 class="section-title" data-ru="Программа конференции" data-en="Conference program"
+                    data-ky="Конференциянын программасы">Программа конференции</h2>
+                <div class="tabs" role="tablist" aria-label="Program tabs">
+                    <button class="tab active" role="tab" aria-selected="true" aria-controls="day1"
+                        data-day="day1"><span class="tab__num" data-ru="6 августа" data-en="6 August"
+                            data-ky="6-август">6 августа</span><span class="tab__sub" data-ru="Чт · Заезд"
+                            data-en="Thu · Arrival" data-ky="Бей · Келүү">Чт · Заезд</span></button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="day2" data-day="day2"><span
+                            class="tab__num" data-ru="7 августа" data-en="7 August" data-ky="7-август">7
+                            августа</span><span class="tab__sub" data-ru="Пт · Конференция" data-en="Fri · Conference"
+                            data-ky="Жума · Конференция">Пт · Конференция</span></button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="day3" data-day="day3"><span
+                            class="tab__num" data-ru="8 августа" data-en="8 August" data-ky="8-август">8
+                            августа</span><span class="tab__sub" data-ru="Сб · Отъезд" data-en="Sat · Departure"
+                            data-ky="Ишемби · Кетүү">Сб · Отъезд</span></button>
+                </div>
+                <div class="tab-panel active" id="day1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-ru="Время" data-en="Time" data-ky="Убакыт">Время</th>
+                                <th data-ru="Мероприятие" data-en="Event" data-ky="Иш-чара">Мероприятие</th>
+                                <th data-ru="Место" data-en="Location" data-ky="Жери">Место</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span data-ru="В течение дня" data-en="Throughout the day" data-ky="Күн бою">В
+                                        течение дня</span></td>
+                                <td class="te"><span data-ru="Встреча участников конференции"
+                                        data-en="Meeting of participants" data-ky="Катышуучуларды тосуп алуу">Встреча
+                                        участников конференции</span></td>
+                                <td class="tv" data-ru="Аэропорт «Манас»" data-en="Manas Airport"
+                                    data-ky="Манас аэропорту">Аэропорт «Манас»</td>
+                            </tr>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span data-ru="В течение дня" data-en="Throughout the day" data-ky="Күн бою">В
+                                        течение дня</span></td>
+                                <td class="te"><span data-ru="Размещение участников" data-en="Participant check-in"
+                                        data-ky="Катышуучуларды жайгаштыруу">Размещение участников</span><span
+                                        class="te__note" data-ru="Регистрация в отеле" data-en="Hotel check-in"
+                                        data-ky="Мейманканада каттоо">Регистрация в отеле</span></td>
+                                <td class="tv" data-ru="Отель «Novotel»" data-en="Novotel Hotel"
+                                    data-ky="Novotel мейманканасы">Отель «Novotel»</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-panel" id="day2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-ru="Время" data-en="Time" data-ky="Убакыт">Время</th>
+                                <th data-ru="Мероприятие" data-en="Event" data-ky="Иш-чара">Мероприятие</th>
+                                <th data-ru="Место" data-en="Location" data-ky="Жери">Место</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span>с 08:00</span></td>
+                                <td class="te"><span data-ru="Завтрак — шведский стол" data-en="Breakfast — buffet"
+                                        data-ky="Эртең мененки тамак — швед үстөлү">Завтрак — шведский стол</span></td>
+                                <td class="tv" data-ru="Ресторан отеля" data-en="Hotel restaurant"
+                                    data-ky="Мейманкананын рестораны">Ресторан отеля</td>
+                            </tr>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span>08:30–09:00</span></td>
+                                <td class="te"><span data-ru="Регистрация участников" data-en="Participant registration"
+                                        data-ky="Катышуучуларды каттоо">Регистрация участников</span><span
+                                        class="te__note" data-ru="Музыкальная композиция" data-en="Musical performance"
+                                        data-ky="Музыкалык аткаруу">Музыкальная композиция</span></td>
+                                <td class="tv" data-ru="Фойе, 2 этаж" data-en="Foyer, 2nd floor"
+                                    data-ky="Фойе, 2-кабат">Фойе, 2 этаж</td>
+                            </tr>
+                            <tr class="tr-highlight">
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span>09:00</span></td>
+                                <td class="te"><span data-ru="Открытие конференции" data-en="Conference opening"
+                                        data-ky="Конференциянын ачылышы">Открытие конференции</span></td>
+                                <td class="tv" data-ru="Конференц-зал" data-en="Conference hall"
+                                    data-ky="Конференц-зал">Конференц-зал</td>
+                            </tr>
+                            <tr class="tr-highlight">
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span>10:00–11:00</span></td>
+                                <td class="te"><span data-ru="Рабочая программа" data-en="Working session"
+                                        data-ky="Иш программасы">Рабочая программа</span></td>
+                                <td class="tv" data-ru="Конференц-зал" data-en="Conference hall"
+                                    data-ky="Конференц-зал">Конференц-зал</td>
+                            </tr>
+                            <tr class="tr-highlight">
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span>12:30–13:00</span></td>
+                                <td class="te"><span data-ru="Закрытие конференции" data-en="Conference closing"
+                                        data-ky="Конференциянын жабылышы">Закрытие конференции</span><span
+                                        class="te__note" data-ru="Принятие рекомендаций"
+                                        data-en="Adoption of recommendations" data-ky="Сунуштарды кабыл алуу">Принятие
+                                        рекомендаций</span></td>
+                                <td class="tv" data-ru="Конференц-зал" data-en="Conference hall"
+                                    data-ky="Конференц-зал">Конференц-зал</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-panel" id="day3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-ru="Время" data-en="Time" data-ky="Убакыт">Время</th>
+                                <th data-ru="Мероприятие" data-en="Event" data-ky="Иш-чара">Мероприятие</th>
+                                <th data-ru="Место" data-en="Location" data-ky="Жери">Место</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span data-ru="с 07:00" data-en="from 07:00" data-ky="07:00дөн баштап">с
+                                        07:00</span></td>
+                                <td class="te"><span data-ru="Завтрак — шведский стол" data-en="Breakfast — buffet"
+                                        data-ky="Эртең мененки тамак — швед үстөлү">Завтрак — шведский стол</span></td>
+                                <td class="tv" data-ru="Ресторан отеля" data-en="Hotel restaurant"
+                                    data-ky="Мейманкананын рестораны">Ресторан отеля</td>
+                            </tr>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span data-ru="до 12:00" data-en="until 12:00" data-ky="12:00гө чейин">до
+                                        12:00</span></td>
+                                <td class="te"><span data-ru="Сдача номеров" data-en="Check-out"
+                                        data-ky="Номерлерди тапшыруу">Сдача номеров</span><span class="te__note"
+                                        data-ru="Камера хранения" data-en="Luggage storage"
+                                        data-ky="Багаж сактоочу жай">Камера хранения</span></td>
+                                <td class="tv" data-ru="Отель «Novotel»" data-en="Novotel Hotel"
+                                    data-ky="Novotel мейманканасы">Отель «Novotel»</td>
+                            </tr>
+                            <tr>
+                                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2">
+                                        <circle cx="8" cy="8" r="6.5" />
+                                        <polyline points="8,4 8,8 11,10" />
+                                    </svg><span data-ru="В течение дня" data-en="Throughout the day" data-ky="Күн бою">В
+                                        течение дня</span></td>
+                                <td class="te"><span data-ru="Отъезд участников" data-en="Departure of participants"
+                                        data-ky="Катышуучулардын кетүүсү">Отъезд участников</span></td>
+                                <td class="tv">—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section guest" id="guest">
+            <div class="container">
+                <p class="eyebrow" data-ru="Для участников" data-en="For participants" data-ky="Катышуучулар үчүн">Для
+                    участников</p>
+                <h2 class="section-title" data-ru="Забота о госте" data-en="Guest care" data-ky="Меймандарга кам көрүү">
+                    Забота о госте</h2>
+                <div class="speakers__grid" style="grid-template-columns:repeat(3,1fr); display: flex; flex-wrap: wrap;">
+                    <div class="card">
+                        <div style="font-size:32px;margin-bottom:10px">🚕</div>
+                        <h3 style="font-size:18px;margin-bottom:8px" data-ru="Транспорт" data-en="Transport"
+                            data-ky="Транспорт">Транспорт</h3>
+                        <p data-ru="Яндекс Go — основное такси. Маршрут аэропорт → отель: 35–40 мин, 600–800 сом."
+                            data-en="Yandex Go is recommended. Airport → hotel: 35–40 min, 600–800 som."
+                            data-ky="Yandex Go сунушталат. Аэропорт → мейманкана: 35–40 мүнөт, 600–800 сом.">Яндекс Go —
+                            основное такси. Маршрут аэропорт → отель: 35–40 мин, 600–800 сом.</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size:32px;margin-bottom:10px">💱</div>
+                        <h3 style="font-size:18px;margin-bottom:8px" data-ru="Валюта" data-en="Currency"
+                            data-ky="Валюта">Валюта</h3>
+                        <p data-ru="Кыргызский сом (KGS). Курсы НБКР смотрите на www.nbkr.kg"
+                            data-en="Kyrgyz som (KGS). Check rates at www.nbkr.kg"
+                            data-ky="Кыргыз сому (KGS). Алмашуу курстарын www.nbkr.kg сайтынан караңыз.">Кыргызский сом
+                            (KGS). Курсы НБКР смотрите на www.nbkr.kg</p>
+                    </div>
+                    <div class="card">
+                        <div style="font-size:32px;margin-bottom:10px">🏨</div>
+                        <h3 style="font-size:18px;margin-bottom:8px" data-ru="Отель" data-en="Hotel"
+                            data-ky="Мейманкана">Отель</h3>
+                        <p data-ru="Novotel City Center: Wi-Fi, парковка, ресторан. Забронируйте заранее."
+                            data-en="Novotel City Center: Wi-Fi, parking, restaurant. Book in advance."
+                            data-ky="Novotel City Center: Wi-Fi, авто токтотмо, ресторан. Алдын ала брондоңуз.">Novotel
+                            City Center: Wi-Fi, парковка, ресторан. Забронируйте заранее.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section register" id="register">
+            <div class="container">
+                <p class="eyebrow" data-ru="Участие" data-en="Participation" data-ky="Катышуу">Участие</p>
+                <h2 class="section-title" data-ru="Регистрация" data-en="Registration" data-ky="Катталуу">Регистрация
+                </h2>
+                <div class="reg-wrap">
+                    <form class="reg-form" id="regForm" novalidate>
+                        <div class="form-row">
+                            <div class="fg"><label for="fullname"><span data-ru="ФИО" data-en="Full name"
+                                        data-ky="Аты-жөнү">ФИО</span> <span class="req">*</span></label><input
+                                    type="text" id="fullname" required placeholder="Иванов Иван Иванович" /></div>
+                            <div class="fg"><label for="org"><span data-ru="Организация" data-en="Organization"
+                                        data-ky="Уюм">Организация</span> <span class="req">*</span></label><input
+                                    type="text" id="org" required placeholder="Нотариальная палата..." /></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="fg"><label for="pos" data-ru="Должность" data-en="Position"
+                                    data-ky="Кызматы">Должность</label><input type="text" id="pos"
+                                    placeholder="Нотариус" /></div>
+                            <div class="fg"><label for="country"><span data-ru="Страна" data-en="Country"
+                                        data-ky="Өлкө">Страна</span> <span class="req">*</span></label><input
+                                    type="text" id="country" required placeholder="Кыргызстан" /></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="fg"><label for="email"><span data-ru="Email" data-en="Email"
+                                        data-ky="Эл. почта">Email</span> <span class="req">*</span></label><input
+                                    type="email" id="email" required placeholder="example@mail.com" /></div>
+                            <div class="fg"><label for="phone"><span data-ru="Телефон" data-en="Phone"
+                                        data-ky="Телефон">Телефон</span> <span class="req">*</span></label><input
+                                    type="tel" id="phone" required placeholder="+996..." /></div>
+                        </div>
+                        <div class="fg"><label for="comment" data-ru="Комментарий" data-en="Comment"
+                                data-ky="Комментарий">Комментарий</label><textarea id="comment" rows="4"
+                                placeholder="..."></textarea></div>
+                        <div class="form-check">
+                            <label class="chk-label">
+                                <input type="checkbox" id="privacy" required />
+                                <span class="chk-box">✓</span>
+                                <span data-ru="Согласен(а) на обработку персональных данных"
+                                    data-en="I agree to the processing of personal data"
+                                    data-ky="Жеке маалыматтарды иштетүүгө макулмун">Согласен(а) на обработку
+                                    персональных данных</span>
+                            </label>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn--bronze" data-ru="Отправить заявку"
+                                data-en="Submit application" data-ky="Арыз жөнөтүү">Отправить заявку</button>
+                        </div>
+                        <div class="form-ok" id="formOk" hidden>
+                            <p data-ru="✓ Ваша заявка принята! Мы свяжемся с вами в ближайшее время."
+                                data-en="✓ Your application has been received! We will contact you shortly."
+                                data-ky="✓ Сиздин арызыңыз кабыл алынды! Жакын арада байланышабыз.">✓ Ваша заявка
+                                принята! Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!-- ==================== PDF VIEWER ==================== -->
+<section class="section pdf-section" id="pdf">
+  <div class="container">
+    <p class="eyebrow" data-ru="Документ" data-en="Document" data-ky="Документ">Документ</p>
+    <h2 class="section-title" data-ru="АКАДЕМИЯ НОТАРИАТА" data-en="Academy of Notaries" data-ky="Нотариат академиясы">АКАДЕМИЯ НОТАРИАТА</h2>
+
+
+    <div class="pdf-card">
+      <div class="pdf-toolbar">
+
+
+        <a class="btn btn--outline-bronze pdf-download"
+           href="/АКАДЕМИЯ НОТАРИАТА.pdf"
+           target="_blank"
+           rel="noopener"
+           download
+           data-ru="Скачать PDF"
+           data-en="Download PDF"
+           data-ky="PDF жүктөө">Скачать PDF</a>
+      </div>
+
+      <div class="pdf-frame-wrap">
+        <iframe
+          class="pdf-frame"
+          src="/АКАДЕМИЯ НОТАРИАТА.pdf"
+          title="PDF документ"
+          loading="lazy">
+        </iframe>
+
+        <div class="pdf-fallback">
+          <p data-ru="Если PDF не открылся внутри страницы, откройте его по кнопке выше."
+             data-en="If the PDF does not open inside the page, use the button above."
+             data-ky="Эгер PDF бет ичинде ачылбаса, жогорудагы баскыч менен ачыңыз.">
+            Если PDF не открылся внутри страницы, откройте его по кнопке выше.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section media" id="media">
+            <div class="container">
+                <img src="/image.png" alt="">
+            </div>
+        </section>
+
+        <section class="section media" id="media">
+            <div class="container">
+                <p class="eyebrow" data-ru="Фотогалерея" data-en="Photo gallery" data-ky="Сүрөт галереясы">Фотогалерея
+                </p>
+                <h2 class="section-title" data-ru="Бишкек и Кыргызстан" data-en="Bishkek and Kyrgyzstan"
+                    data-ky="Бишкек жана Кыргызстан">Бишкек и Кыргызстан</h2>
+                <div class="gallery" id="gallery">
+                    <figure class="g-item"><img src="https://too.kg/wp-content/uploads/15762598709211023_e489.jpg"
+                            alt="Центр Бишкека" loading="lazy" />
+                        <figcaption data-ru="Центр Бишкека — площадь Ала-Тоо"
+                            data-en="Bishkek city center — Ala-Too Square"
+                            data-ky="Бишкек шаарынын борбору — Ала-Тоо аянты">Центр Бишкека — площадь Ала-Тоо
+                        </figcaption>
+                    </figure>
+                    <figure class="g-item"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/28973789-858c-45d6-a458-549b43e5e5d9/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/900x/" alt="Парк Ала-Арча"
+                            loading="lazy" />
+                        <figcaption data-ru="Природный парк «Ала-Арча»" data-en="Ala-Archa Nature Park"
+                            data-ky="Ала-Арча жаратылыш паркы">Природный парк «Ала-Арча»</figcaption>
+                    </figure>
+                    <figure class="g-item"><img
+                            src="https://avatars.mds.yandex.net/get-altay/5480011/2a0000017d154fa6982ed3ace100f4dd8358/L_height"
+                            alt="Озеро Иссык-Куль" loading="lazy" />
+                        <figcaption data-ru="Озеро Иссык-Куль" data-en="Lake Issyk-Kul" data-ky="Ысык-Көл көлү">Озеро
+                            Иссык-Куль</figcaption>
+                    </figure>
+                    <figure class="g-item"><img
+                            src="https://yurta.kg/wp-content/uploads/2023/04/yurty-dlya-conferenciy-kyrgyzstane-kupit-min.jpg"
+                            alt="Традиционная юрта" loading="lazy" />
+                        <figcaption data-ru="Традиционная кыргызская юрта" data-en="Traditional Kyrgyz yurt"
+                            data-ky="Салттуу кыргыз боз үйү">Традиционная кыргызская юрта</figcaption>
+                    </figure>
+                </div>
+                <div class="lightbox" id="lightbox" hidden>
+                    <div class="lb-bg" id="lbBg"></div>
+                    <button class="lb-close" id="lbClose" aria-label="Закрыть">×</button>
+                    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Назад">‹</button>
+                    <div class="lb-body">
+                        <img src="" alt="" id="lbImg" />
+                        <p class="lb-cap" id="lbCap"></p>
+                    </div>
+                    <button class="lb-nav lb-next" id="lbNext" aria-label="Вперёд">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners" id="partners">
+            <div class="container">
+                <p class="eyebrow" data-ru="Поддержка" data-en="Support" data-ky="Колдоо">Поддержка</p>
+                <h2 class="section-title" data-ru="Партнеры конференции" data-en="Conference partners"
+                    data-ky="Конференциянын өнөктөштөрү">Партнеры конференции</h2>
+                <div class="partners__grid">
+                    <div class="partner-card">
+                        <div class="partner-card__placeholder">Логотип</div><span class="partner-card__name"
+                            data-ru="Партнер 1" data-en="Partner 1" data-ky="Өнөктөш 1">Партнер 1</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__placeholder">Логотип</div><span class="partner-card__name"
+                            data-ru="Партнер 2" data-en="Partner 2" data-ky="Өнөктөш 2">Партнер 2</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__placeholder">Логотип</div><span class="partner-card__name"
+                            data-ru="Партнер 3" data-en="Partner 3" data-ky="Өнөктөш 3">Партнер 3</span>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__placeholder">Логотип</div><span class="partner-card__name"
+                            data-ru="Партнер 4" data-en="Partner 4" data-ky="Өнөктөш 4">Партнер 4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contacts" id="contacts">
+            <div class="container">
+                <p class="eyebrow" data-ru="Связь" data-en="Contact" data-ky="Байланыш">Связь</p>
+                <h2 class="section-title" data-ru="Контакты" data-en="Contacts" data-ky="Байланыштар">Контакты</h2>
+                <div class="contacts__grid">
+                    <div class="contacts__info">
+                        <div class="cb">
+                            <h4 data-ru="Организатор" data-en="Organizer" data-ky="Уюштуруучу">Организатор</h4>
+                            <p data-ru="Нотариальная палата Кыргызской Республики"
+                                data-en="Notarial Chamber of the Kyrgyz Republic"
+                                data-ky="Кыргыз Республикасынын Нотариалдык палатасы">Нотариальная палата Кыргызской
+                                Республики</p>
+                            <p><a href="https://notariat.kg" target="_blank" rel="noopener">notariat.kg</a></p>
+                        </div>
+                        <div class="cb">
+                            <h4 data-ru="Место проведения" data-en="Venue" data-ky="Өткөрүлүүчү жай">Место проведения
+                            </h4>
+                            <p><a href="https://maps.app.goo.gl/jMW4d3X1Z9MX2Cru7" target="_blank" rel="noopener"
+                                    class="map-link"><svg style="width: 25px;" viewBox="0 0 16 16" fill="none" stroke="#A67C52"
+                        stroke-width="1.3" aria-hidden="true" transform="scale(0.8)">
+                                        <path d="M8 2C5.8 2 4 3.8 4 6.2c0 3.2 4 8 4 8s4-4.8 4-8C12 3.8 10.2 2 8 2z" />
+                                        <circle cx="8" cy="6" r="1.5" />
+                                    </svg>
+<span data-ru="Novotel Bishkek City Center"
+                                        data-en="Novotel Bishkek City Center"
+                                        data-ky="Novotel Bishkek City Center">Novotel Bishkek City Center</span></a></p>
+                            <p data-ru="г. Бишкек, пр. Манаса, 16" data-en="16 Manas Ave., Bishkek"
+                                data-ky="Бишкек ш., Манас пр., 16">г. Бишкек, пр. Манаса, 16</p>
+                        </div>
+                        <div class="cb">
+                            <h4 data-ru="Ответственные" data-en="Responsible persons" data-ky="Жооптуулар">Ответственные
+                            </h4>
+                            <p>Смаилова Айгуль<br><a href="https://wa.me/996705806640" target="_blank"
+                                    rel="noopener">+996 705 806 640</a></p>
+                            <p>Асаналиева Жылдыз<br><a href="https://wa.me/996700199522" target="_blank"
+                                    rel="noopener">+996 700 199 522</a></p>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.204445612716!2d74.58750931558838!3d42.87466397915866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b59e2a32e3%3A0x4c42f5bfc7f17ef2!2sNovotel%20Bishkek%20City%20Center!5e0!3m2!1sru!2skg!4v1718000000000!5m2!1sru!2skg"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Novotel Bishkek City Center на карте"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__main">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <svg class="footer__seal" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <circle cx="25" cy="25" r="22" stroke="#A67C52" stroke-width="1" />
+                        <circle cx="25" cy="25" r="16" stroke="#A67C52" stroke-width="0.5" stroke-dasharray="2 2" />
+                        <path d="M25 10L27.5 18.5L36.5 18.5L29.5 23.5L32 32L25 27L18 32L20.5 23.5L13.5 18.5L22.5 18.5Z"
+                            fill="#A67C52" opacity="0.8" />
+                    </svg>
+                    <div>
+                        <strong data-ru="Нотариальная палата КР" data-en="Notarial Chamber of the KR"
+                            data-ky="КР Нотариалдык палатасы">Нотариальная палата КР</strong>
+                        <span data-ru="Конференция, 6–8 августа 2026" data-en="Conference, 6–8 August 2026"
+                            data-ky="Конференция, 2026-жылдын 6–8-августу">Конференция, 6–8 августа 2026</span>
+                        <span data-ru="г. Бишкек, Кыргызстан" data-en="Bishkek, Kyrgyzstan"
+                            data-ky="Бишкек ш., Кыргызстан">г. Бишкек, Кыргызстан</span>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 data-ru="Навигация" data-en="Navigation" data-ky="Навигация">Навигация</h5>
+                    <ul>
+                        <li><a href="#about" data-ru="О конференции" data-en="About the conference"
+                                data-ky="Конференция жөнүндө">О конференции</a></li>
+                        <li><a href="#program" data-ru="Программа" data-en="Program" data-ky="Программа">Программа</a>
+                        </li>
+                        <li><a href="#register" data-ru="Регистрация" data-en="Registration"
+                                data-ky="Катталуу">Регистрация</a></li>
+                        <li><a href="#contacts" data-ru="Контакты" data-en="Contacts" data-ky="Байланыштар">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h5 data-ru="Контакты" data-en="Contacts" data-ky="Байланыш">Контакты</h5>
+                    <ul>
+                        <li><a href="https://wa.me/996705806640" target="_blank" rel="noopener">+996 705 806 640</a>
+                        </li>
+                        <li><a href="https://wa.me/996700199522" target="_blank" rel="noopener">+996 700 199 522</a>
+                        </li>
+                        <li><a href="https://notariat.kg" target="_blank" rel="noopener">notariat.kg</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h5 data-ru="Ссылки" data-en="Links" data-ky="Шилтемелер">Ссылки</h5>
+                    <ul>
+                        <li><a href="https://www.nbkr.kg" target="_blank" rel="noopener">NBKR</a></li>
+                        <li><a href="https://2gis.kg/bishkek" target="_blank" rel="noopener">2GIS Бишкек</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p data-ru="© 2026 Нотариальная палата Кыргызской Республики"
+                    data-en="© 2026 Notarial Chamber of the Kyrgyz Republic"
+                    data-ky="© 2026 Кыргыз Республикасынын Нотариалдык палатасы">© 2026 Нотариальная палата Кыргызской
+                    Республики</p>
+                <p><a href="https://wa.me/996705806640" target="_blank" rel="noopener">+996 705 806 640</a>
+                    &nbsp;·&nbsp; <a href="https://wa.me/996700199522" target="_blank" rel="noopener">+996 700 199
+                        522</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = 'ru';
+
+        function setLang(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.documentElement.setAttribute('data-lang', lang);
+
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector('.lang-btn[data-lang-btn="' + lang + '"]')?.classList.add('active');
+
+            document.querySelectorAll('[data-ru],[data-en],[data-ky]').forEach(el => {
+                const value = el.getAttribute('data-' + lang) || el.getAttribute('data-ru');
+                if (!value) return;
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = value;
+                } else {
+                    el.textContent = value;
+                }
+            });
+        }
+
+        function openTab(dayId) {
+            document.querySelectorAll('.tab').forEach(t => {
+                t.classList.toggle('active', t.getAttribute('data-day') === dayId);
+                t.setAttribute('aria-selected', t.getAttribute('data-day') === dayId ? 'true' : 'false');
+            });
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById(dayId)?.classList.add('active');
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            const form = document.getElementById('regForm');
+            const ok = document.getElementById('formOk');
+            form.style.display = 'none';
+            ok.hidden = false;
+        }
+
+        (function initVideoFallback() {
+            const vid = document.getElementById('heroBgVideo');
+            const fallback = document.getElementById('heroFallback');
+            if (!vid) return;
+            vid.addEventListener('canplay', () => { if (fallback) fallback.style.display = 'none'; });
+            vid.addEventListener('error', () => { vid.style.display = 'none'; });
+        })();
+
+        (function initNav() {
+            const burger = document.getElementById('burger');
+            const links = document.getElementById('navLinks');
+            if (!burger || !links) return;
+            burger.addEventListener('click', () => {
+                const open = links.classList.toggle('open');
+                burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+            links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                links.classList.remove('open');
+                burger.setAttribute('aria-expanded', 'false');
+            }));
+        })();
+
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => openTab(tab.getAttribute('data-day')));
+        });
+
+        document.getElementById('regForm')?.addEventListener('submit', submitForm);
+
+        (function initGallery() {
+            const items = Array.from(document.querySelectorAll('#gallery .g-item'));
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lbImg');
+            const lbCap = document.getElementById('lbCap');
+            const lbClose = document.getElementById('lbClose');
+            const lbPrev = document.getElementById('lbPrev');
+            const lbNext = document.getElementById('lbNext');
+            const lbBg = document.getElementById('lbBg');
+            if (!items.length || !lb || !lbImg || !lbCap) return;
+            let idx = 0;
+
+            function show(i) {
+                idx = (i + items.length) % items.length;
+                const img = items[idx].querySelector('img');
+                const cap = items[idx].querySelector('figcaption');
+                lbImg.src = img.src;
+                lbImg.alt = img.alt || '';
+                lbCap.textContent = cap ? cap.textContent : '';
+                lb.hidden = false;
+                document.body.style.overflow = 'hidden';
+            }
+            function close() {
+                lb.hidden = true;
+                document.body.style.overflow = '';
+            }
+            items.forEach((item, i) => item.addEventListener('click', () => show(i)));
+            lbClose?.addEventListener('click', close);
+            lbBg?.addEventListener('click', close);
+            lbPrev?.addEventListener('click', () => show(idx - 1));
+            lbNext?.addEventListener('click', () => show(idx + 1));
+            document.addEventListener('keydown', e => {
+                if (lb.hidden) return;
+                if (e.key === 'Escape') close();
+                if (e.key === 'ArrowLeft') show(idx - 1);
+                if (e.key === 'ArrowRight') show(idx + 1);
+            });
+        })();
+
+        setLang('ru');
+    </script>
+</body>
+
+</html>
