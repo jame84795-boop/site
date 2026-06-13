@@ -1,0 +1,856 @@
+Молодец теперь нужны коректировки перевод на кыргызский язык не работает исправь. Блок Координаторы и информация пустая почему в том сайте примера такого блока вобще нету ну ладно постаь туда гугл карту по адресу. На фон баннера интегрируй код с возмождностью поставки видео mp4 чтобы на веьс баннер был!
+Отправь в конце мне файл html на скачку
+
+Информация которая уже есть сайте не удаляй!
+Просто сделай эти коректировки и все!
+
+Каждый блок с информацией отсюда возьми!
+
+
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Международная конференция Нотариальной палаты КР — Бишкек, 6–8 августа 2026" />
+  <title>Конференция НПКР 2026 | Бишкек</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-D42sAToM.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BDuk8Zwj.css">
+<script async src="https://bolt.new/badge.js?s=ff6167de-16a1-4913-966a-c403fe46a71d"></script></head>
+<body>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__org">
+        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16">
+          <circle cx="9" cy="9" r="8" stroke="#A67C52" stroke-width="1"/>
+          <path d="M9 3.5L10 6.5H13L10.5 8.5L11.5 11.5L9 9.5L6.5 11.5L7.5 8.5L5 6.5H8Z" fill="#A67C52"/>
+        </svg>
+        <span data-i18n="org">Нотариальная палата Кыргызской Республики</span>
+      </div>
+      <div class="topbar__right">
+        <a href="https://wa.me/996705806640" class="topbar__tel topbar__wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="13" height="13"><path d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+          +996 705 806 640
+        </a>
+        <div class="lang-switcher" role="group" aria-label="Язык / Language">
+          <button class="lang-btn lang-btn--active" data-lang-btn="ru">РУС</button>
+          <button class="lang-btn" data-lang-btn="en">ENG</button>
+          <button class="lang-btn" data-lang-btn="ky">КЫР</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">
+        <svg class="nav__seal" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="22" r="20" stroke="#A67C52" stroke-width="1.2"/>
+          <circle cx="22" cy="22" r="15" stroke="#A67C52" stroke-width="0.5" stroke-dasharray="2 2"/>
+          <path d="M22 8L24.5 16H32.5L26.2 20.5L28.5 28.5L22 24L15.5 28.5L17.8 20.5L11.5 16H19.5Z" fill="#A67C52"/>
+        </svg>
+        <div class="nav__logo-text">
+          <strong data-i18n="nav_org_short">НПКР</strong>
+          <span data-i18n="nav_conf">Конференция 2026</span>
+        </div>
+      </a>
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#about" data-i18n="nav_about">О конференции</a></li>
+        <li><a href="#speakers" data-i18n="nav_speakers">Спикеры</a></li>
+        <li><a href="#program" data-i18n="nav_program">Программа</a></li>
+        <li><a href="#guest" data-i18n="nav_guest">Гостям</a></li>
+        <li><a href="#contacts" data-i18n="nav_contacts">Контакты</a></li>
+      </ul>
+      <a href="#register" class="btn btn--bronze nav__cta" data-i18n="nav_register">Регистрация</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO — Petroglyphs + Felt Texture ==================== -->
+  <section class="hero" id="top">
+    <!-- Petroglyph SVG decorations -->
+    <div class="hero__petro-wrap" aria-hidden="true">
+      <!-- Sun Wheel (Saimaluu-Tash style) -->
+      <svg class="hero__petro hero__petro--sun" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle class="petro-circle" cx="100" cy="100" r="90" stroke-width="1.2"/>
+        <circle class="petro-circle" cx="100" cy="100" r="70" stroke-width="1"/>
+        <circle class="petro-circle" cx="100" cy="100" r="50" stroke-width="0.8"/>
+        <circle class="petro-circle" cx="100" cy="100" r="30" stroke-width="0.6"/>
+        <circle cx="100" cy="100" r="8" stroke-width="1" fill="none"/>
+        <!-- Rays -->
+        <g class="petro-path" stroke-width="1" fill="none">
+          <line x1="100" y1="10" x2="100" y2="42"/>
+          <line x1="100" y1="158" x2="100" y2="190"/>
+          <line x1="10" y1="100" x2="42" y2="100"/>
+          <line x1="158" y1="100" x2="190" y2="100"/>
+          <line x1="30" y1="30" x2="55" y2="55"/>
+          <line x1="145" y1="145" x2="170" y2="170"/>
+          <line x1="170" y1="30" x2="145" y2="55"/>
+          <line x1="30" y1="170" x2="55" y2="145"/>
+        </g>
+        <!-- Spiral elements -->
+        <path class="petro-path" d="M100 70 Q115 85 100 100 Q85 115 100 130" stroke-width="0.8" fill="none"/>
+      </svg>
+
+      <!-- Ibex (mountain goat — iconic petroglyph) -->
+      <svg class="hero__petro hero__petro--ibex" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+        <g class="petro-path" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Body -->
+          <path d="M85 45 Q95 42 100 48 Q105 55 100 60"/>
+          <!-- Neck & Head -->
+          <path d="M85 45 Q78 35 70 30"/>
+          <!-- Horns — exaggerated curved -->
+          <path d="M70 30 Q55 15 45 8 Q42 5 38 10"/>
+          <path d="M72 32 Q60 22 52 18 Q48 15 44 20"/>
+          <!-- Legs -->
+          <path d="M92 55 L88 70"/>
+          <path d="M98 55 L100 70"/>
+          <path d="M78 52 L72 68"/>
+          <path d="M82 54 L85 70"/>
+          <!-- Tail -->
+          <path d="M100 48 Q108 45 110 38"/>
+        </g>
+      </svg>
+
+      <!-- Concentric circles (Cholpon-Ata style) -->
+      <svg class="hero__petro hero__petro--concentric" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle class="petro-circle" cx="50" cy="50" r="45" stroke-width="1"/>
+        <circle class="petro-circle" cx="50" cy="50" r="35" stroke-width="0.8"/>
+        <circle class="petro-circle" cx="50" cy="50" r="25" stroke-width="0.6"/>
+        <circle class="petro-circle" cx="50" cy="50" r="15" stroke-width="0.5"/>
+        <circle cx="50" cy="50" r="5" stroke-width="0.8" fill="none"/>
+      </svg>
+
+      <!-- Zigzag pattern (water/mountain symbol) -->
+      <svg class="hero__petro hero__petro--zigzag" viewBox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
+        <polyline class="petro-path" points="0,30 20,10 40,30 60,10 80,30 100,10 120,30 140,10 160,30 180,10 200,30 220,10 240,30 260,10 280,30 300,10" stroke-width="1.2" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="hero__content container">
+      <p class="hero__tag" data-i18n="hero_tag">Международная конференция</p>
+      <div class="hero__ornline" aria-hidden="true">
+        <svg viewBox="0 0 320 14" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="7" x2="130" y2="7" stroke="#A67C52" stroke-width="0.8" opacity="0.7"/>
+          <polygon points="137,7 144,3 151,7 144,11" fill="none" stroke="#A67C52" stroke-width="0.8" opacity="0.7"/>
+          <rect x="154" y="4" width="6" height="6" transform="rotate(45 157 7)" fill="#A67C52" opacity="0.5"/>
+          <polygon points="164,7 171,3 178,7 171,11" fill="none" stroke="#A67C52" stroke-width="0.8" opacity="0.7"/>
+          <line x1="185" y1="7" x2="320" y2="7" stroke="#A67C52" stroke-width="0.8" opacity="0.7"/>
+        </svg>
+      </div>
+      <h1 class="hero__title" data-i18n="hero_title">
+        Противодействие легализации преступных доходов:
+        <span class="hero__title-sub" data-i18n="hero_subtitle">Ключевая роль нотариата</span>
+      </h1>
+      <div class="hero__badges">
+        <div class="hero__badge">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2" y="3" width="16" height="15" rx="2"/><line x1="2" y1="8" x2="18" y2="8"/><line x1="6" y1="1" x2="6" y2="5"/><line x1="14" y1="1" x2="14" y2="5"/></svg>
+          <span data-i18n="hero_dates">6–8 августа 2026</span>
+        </div>
+        <div class="hero__badge">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 2C7 2 4 4.7 4 8c0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-3-6-6-6z"/><circle cx="10" cy="8" r="2"/></svg>
+          <span data-i18n="hero_venue">Отель «Novotel», Бишкек</span>
+        </div>
+      </div>
+      <div class="hero__actions">
+        <a href="#register" class="btn btn--bronze btn--large pulse" data-i18n="hero_register">Зарегистрироваться</a>
+        <a href="#program" class="btn btn--outline-bronze btn--large" data-i18n="hero_program">Программа</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6,9 12,15 18,9"/></svg>
+    </div>
+  </section>
+
+  <!-- ==================== STATS STRIP ==================== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <strong>3</strong>
+        <span data-i18n="stats_days">дня программы</span>
+      </div>
+      <div class="stats__div" aria-hidden="true"></div>
+      <div class="stats__item">
+        <strong data-i18n="stats_intl_val">СНГ+</strong>
+        <span data-i18n="stats_intl">международный формат</span>
+      </div>
+      <div class="stats__div" aria-hidden="true"></div>
+      <div class="stats__item">
+        <strong data-i18n="stats_cert_val">Серт.</strong>
+        <span data-i18n="stats_cert">всем участникам</span>
+      </div>
+      <div class="stats__div" aria-hidden="true"></div>
+      <div class="stats__item">
+        <strong data-i18n="stats_exc_val">Ала-Арча</strong>
+        <span data-i18n="stats_exc">экскурсионная программа</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="about_label">О конференции</p>
+        <h2 class="s-title" data-i18n="about_title">Задачи и цели</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-i18n="about_p1">Международная конференция Нотариальной палаты Кыргызской Республики объединяет ведущих специалистов в области нотариата и противодействия отмыванию преступных доходов из стран СНГ и дальнего зарубежья.</p>
+          <p data-i18n="about_p2">В рамках конференции участники обменяются актуальными практиками, изучат международный опыт в сфере ПОД/ФТ и нотариальной деятельности, а также выработают совместные рекомендации.</p>
+          <div class="about__topics">
+            <div class="about__topic">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="topic1">Противодействие легализации преступных доходов</span>
+            </div>
+            <div class="about__topic">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="topic2">Международный опыт нотариата в сфере ПОД/ФТ</span>
+            </div>
+            <div class="about__topic">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="topic3">Актуальная практика нотариальных палат стран СНГ</span>
+            </div>
+            <div class="about__topic">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><polyline points="4,10 8,14 16,6" stroke="#A67C52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="topic4">Нотариат и цифровые технологии</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__img-col reveal">
+          <div class="about__img-wrap">
+            <img src="/images/2_A4h8PeK.width-800.png"
+                 alt="Горная долина Ала-Арча, Кыргызстан"
+                 loading="lazy"/>
+            <div class="about__img-badge">
+              <p class="about__img-badge-date">6–8</p>
+              <p class="about__img-badge-month" data-i18n="badge_month">авг. 2026</p>
+            </div>
+          </div>
+          <div class="about__venue-card">
+            <svg viewBox="0 0 22 22" fill="none" stroke="#A67C52" stroke-width="1.4" aria-hidden="true"><path d="M11 2C8 2 5 4.5 5 8c0 4.5 6 11 6 11s6-6.5 6-11c0-3.5-3-6-6-6z"/><circle cx="11" cy="8" r="2.2"/></svg>
+            <div>
+              <strong data-i18n="venue_name">Отель «Novotel Bishkek City Center»</strong>
+              <span data-i18n="venue_addr">г. Бишкек, пр. Манаса, 16</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPEAKERS ==================== -->
+  <section class="speakers section-pad" id="speakers">
+    <!-- Petroglyph decoration -->
+    <svg class="speakers__petro" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g stroke="#A67C52" fill="none" stroke-width="1">
+        <circle class="petro-circle" cx="100" cy="100" r="85"/>
+        <circle class="petro-circle" cx="100" cy="100" r="65"/>
+        <circle class="petro-circle" cx="100" cy="100" r="45"/>
+        <!-- Goat figure -->
+        <path class="petro-path" d="M130 80 Q145 75 155 85 Q165 95 160 110 M155 85 L180 70 M155 85 L175 95 M160 110 L155 135 M160 110 L168 135 M130 80 L120 105 M130 80 L140 105"/>
+      </g>
+    </svg>
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="speakers_label">Эксперты</p>
+        <h2 class="s-title" data-i18n="speakers_title">Спикеры конференции</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+      <div class="speakers__grid stagger-children">
+        <!-- Speaker 1 -->
+        <article class="speaker-card">
+          <div class="speaker-card__photo">
+            <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8" opacity="0.3" fill="none"/></svg>
+            <span class="speaker-card__tba" data-i18n="speaker_tba">TBA</span>
+          </div>
+          <div class="speaker-card__info">
+            <strong data-i18n="speaker1_name">Спикер 1</strong>
+            <p data-i18n="speaker1_role">Представитель нотариальной палаты</p>
+            <div class="speaker-card__country">
+              <span>🇰🇬</span>
+              <span data-i18n="speaker1_country">Кыргызстан</span>
+            </div>
+          </div>
+        </article>
+        <!-- Speaker 2 -->
+        <article class="speaker-card">
+          <div class="speaker-card__photo">
+            <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8" opacity="0.3" fill="none"/></svg>
+            <span class="speaker-card__tba" data-i18n="speaker_tba">TBA</span>
+          </div>
+          <div class="speaker-card__info">
+            <strong data-i18n="speaker2_name">Спикер 2</strong>
+            <p data-i18n="speaker2_role">Эксперт по ПОД/ФТ</p>
+            <div class="speaker-card__country">
+              <span>🇷🇺</span>
+              <span data-i18n="speaker2_country">Россия</span>
+            </div>
+          </div>
+        </article>
+        <!-- Speaker 3 -->
+        <article class="speaker-card">
+          <div class="speaker-card__photo">
+            <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8" opacity="0.3" fill="none"/></svg>
+            <span class="speaker-card__tba" data-i18n="speaker_tba">TBA</span>
+          </div>
+          <div class="speaker-card__info">
+            <strong data-i18n="speaker3_name">Спикер 3</strong>
+            <p data-i18n="speaker3_role">Международный эксперт</p>
+            <div class="speaker-card__country">
+              <span>🇰🇿</span>
+              <span data-i18n="speaker3_country">Казахстан</span>
+            </div>
+          </div>
+        </article>
+        <!-- Speaker 4 -->
+        <article class="speaker-card">
+          <div class="speaker-card__photo">
+            <svg viewBox="0 0 60 60" fill="none" aria-hidden="true"><circle cx="30" cy="30" r="28" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><circle cx="30" cy="22" r="10" stroke="#A67C52" stroke-width="0.8" opacity="0.3"/><path d="M12 52 Q20 40 30 40 Q40 40 48 52" stroke="#A67C52" stroke-width="0.8" opacity="0.3" fill="none"/></svg>
+            <span class="speaker-card__tba" data-i18n="speaker_tba">TBA</span>
+          </div>
+          <div class="speaker-card__info">
+            <strong data-i18n="speaker4_name">Спикер 4</strong>
+            <p data-i18n="speaker4_role">Представитель FIU</p>
+            <div class="speaker-card__country">
+              <span>🇧🇾</span>
+              <span data-i18n="speaker4_country">Беларусь</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERNATIONAL PARTICIPANTS ==================== -->
+  <section class="participants section-pad" id="participants">
+    <!-- Petroglyph decoration -->
+    <svg class="participants__petro" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g stroke="#A67C52" fill="none" stroke-width="1">
+        <circle class="petro-circle" cx="100" cy="100" r="90"/>
+        <circle class="petro-circle" cx="100" cy="100" r="60"/>
+        <circle class="petro-circle" cx="100" cy="100" r="30"/>
+        <path class="petro-path" d="M100 10 L100 40 M100 160 L100 190 M10 100 L40 100 M160 100 L190 100"/>
+      </g>
+    </svg>
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label s-label--lt" data-i18n="part_label">География</p>
+        <h2 class="s-title s-title--lt" data-i18n="part_title">Международные участники</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+      <p class="participants__intro reveal" data-i18n="part_intro">Конференция объединяет нотариусов, юристов и экспертов из стран Центральной Азии, СНГ и дальнего зарубежья для обмена опытом и укрепления международного сотрудничества.</p>
+      <div class="country-grid stagger-children">
+        <div class="country-card"><span class="country-flag">🇰🇬</span><span class="country-name" data-i18n="country_kg">Кыргызстан</span></div>
+        <div class="country-card"><span class="country-flag">🇷🇺</span><span class="country-name" data-i18n="country_ru">Россия</span></div>
+        <div class="country-card"><span class="country-flag">🇰🇿</span><span class="country-name" data-i18n="country_kz">Казахстан</span></div>
+        <div class="country-card"><span class="country-flag">🇺🇿</span><span class="country-name" data-i18n="country_uz">Узбекистан</span></div>
+        <div class="country-card"><span class="country-flag">🇹🇯</span><span class="country-name" data-i18n="country_tj">Таджикистан</span></div>
+        <div class="country-card"><span class="country-flag">🇧🇾</span><span class="country-name" data-i18n="country_by">Беларусь</span></div>
+        <div class="country-card"><span class="country-flag">🇦🇲</span><span class="country-name" data-i18n="country_am">Армения</span></div>
+        <div class="country-card"><span class="country-flag">🇦🇿</span><span class="country-name" data-i18n="country_az">Азербайджан</span></div>
+        <div class="country-card"><span class="country-flag">🇲🇩</span><span class="country-name" data-i18n="country_md">Молдова</span></div>
+        <div class="country-card"><span class="country-flag">🇬🇪</span><span class="country-name" data-i18n="country_ge">Грузия</span></div>
+        <div class="country-card"><span class="country-flag">🇹🇲</span><span class="country-name" data-i18n="country_tm">Туркменистан</span></div>
+        <div class="country-card"><span class="country-flag">🇺🇦</span><span class="country-name" data-i18n="country_ua">Украина</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROGRAM ==================== -->
+  <section class="program section-pad" id="program">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="prog_label">Расписание</p>
+        <h2 class="s-title" data-i18n="prog_title">Программа конференции</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="day1" data-day="1">
+          <span class="tab__num" data-i18n="day1_num">6 августа</span>
+          <span class="tab__sub" data-i18n="day1_sub">Чт · Заезд</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="day2" data-day="2">
+          <span class="tab__num" data-i18n="day2_num">7 августа</span>
+          <span class="tab__sub" data-i18n="day2_sub">Пт · Конференция</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="day3" data-day="3">
+          <span class="tab__num" data-i18n="day3_num">8 августа</span>
+          <span class="tab__sub" data-i18n="day3_sub">Сб · Отъезд</span>
+        </button>
+      </div>
+
+      <div class="tab-panel active" id="day1">
+        <div class="prog-wrap">
+          <table class="prog-tbl">
+            <thead><tr><th data-i18n="th_time">Время</th><th data-i18n="th_event">Мероприятие</th><th data-i18n="th_place">Место</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="tt">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg>
+                  <span data-i18n="day1_t1">В течение дня</span>
+                </td>
+                <td class="te"><span class="te__title" data-i18n="day1_e1">Встреча участников конференции</span></td>
+                <td class="tv" data-i18n="day1_v1">Аэропорт «Манас»</td>
+              </tr>
+              <tr>
+                <td class="tt">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg>
+                  <span data-i18n="day1_t2">В течение дня</span>
+                </td>
+                <td class="te"><span class="te__title" data-i18n="day1_e2">Размещение участников</span><span class="te__note" data-i18n="day1_n2">Регистрация в отеле</span></td>
+                <td class="tv" data-i18n="day1_v2">Отель «Novotel»</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="day2" hidden>
+        <div class="prog-wrap">
+          <table class="prog-tbl">
+            <thead><tr><th data-i18n="th_time">Время</th><th data-i18n="th_event">Мероприятие</th><th data-i18n="th_place">Место</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>с 08:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e1">Завтрак — шведский стол</span></td>
+                <td class="tv" data-i18n="day2_v1">Ресторан отеля</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>08:30–09:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e2">Регистрация участников</span><span class="te__note" data-i18n="day2_n2">Музыкальная композиция</span></td>
+                <td class="tv" data-i18n="day2_v2">Фойе, 2 этаж</td>
+              </tr>
+              <tr class="tr-highlight">
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>09:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e3">Открытие конференции</span></td>
+                <td class="tv" data-i18n="day2_v3">Конференц-зал</td>
+              </tr>
+              <tr class="tr-highlight">
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>10:00–11:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e4">Рабочая программа</span></td>
+                <td class="tv" data-i18n="day2_v4">Конференц-зал</td>
+              </tr>
+              <tr class="tr-highlight">
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>12:30–13:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e5">Закрытие конференции</span><span class="te__note" data-i18n="day2_n5">Вручение сертификатов</span></td>
+                <td class="tv" data-i18n="day2_v5">Конференц-зал</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>13:30–15:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e6">Обед «Супара»</span></td>
+                <td class="tv" data-i18n="day2_v6">Ресторан</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>15:30–18:30</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e7">Экскурсия в парк «Ала-Арча»</span><span class="te__note" data-i18n="day2_n7">С сопровождением</span></td>
+                <td class="tv" data-i18n="day2_v7">Парк «Ала-Арча»</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span>19:30–23:30</span></td>
+                <td class="te"><span class="te__title" data-i18n="day2_e9">Гала-ужин</span><span class="te__note" data-i18n="day2_n9">Музыкальная программа</span></td>
+                <td class="tv" data-i18n="day2_v9">Ресторан</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="day3" hidden>
+        <div class="prog-wrap">
+          <table class="prog-tbl">
+            <thead><tr><th data-i18n="th_time">Время</th><th data-i18n="th_event">Мероприятие</th><th data-i18n="th_place">Место</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span data-i18n="day3_t1">с 07:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day3_e1">Завтрак — шведский стол</span></td>
+                <td class="tv" data-i18n="day3_v1">Ресторан отеля</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span data-i18n="day3_t2">до 12:00</span></td>
+                <td class="te"><span class="te__title" data-i18n="day3_e2">Сдача номеров</span><span class="te__note" data-i18n="day3_n2">Камера хранения</span></td>
+                <td class="tv" data-i18n="day3_v2">Отель «Novotel»</td>
+              </tr>
+              <tr>
+                <td class="tt"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><polyline points="8,4 8,8 11,10"/></svg><span data-i18n="day3_t3">В течение дня</span></td>
+                <td class="te"><span class="te__title" data-i18n="day3_e3">Отъезд участников</span></td>
+                <td class="tv">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GUEST CARE ==================== -->
+  <section class="guest section-pad" id="guest">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="guest_label">Для участников</p>
+        <h2 class="s-title" data-i18n="guest_title">Забота о госте</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+
+      <div class="coordinators reveal">
+        <h3 class="coordinators__title" data-i18n="coord_title">Координаторы вашего пребывания</h3>
+        <div class="coord-grid">
+          <div class="coord-card">
+            <a href="https://wa.me/996705806640" class="coord-phone coord-phone--wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="wa-icon"><path d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+              +996 705 806 640
+            </a>
+            <strong class="coord-name">Смаилова Айгуль</strong>
+            <span class="coord-role" data-i18n="coord1_role">Председатель комиссии по международному сотрудничеству НП КР</span>
+          </div>
+          <div class="coord-card">
+            <a href="https://wa.me/996700199522" class="coord-phone coord-phone--wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="wa-icon"><path d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+              +996 700 199 522
+            </a>
+            <strong class="coord-name">Асаналиева Жылдыз</strong>
+            <span class="coord-role" data-i18n="coord2_role">Руководитель Аппарата НПКР</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="useful-grid stagger-children">
+        <div class="useful-card">
+          <div class="useful-card__top">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="useful-card__icon" aria-hidden="true">
+              <rect x="4" y="18" width="32" height="14" rx="2" stroke="#A67C52" stroke-width="1.2"/>
+              <path d="M8 18L12 9H28L32 18" stroke="#A67C52" stroke-width="1.2"/>
+              <circle cx="12" cy="32" r="3.5" stroke="#A67C52" stroke-width="1.2"/>
+              <circle cx="28" cy="32" r="3.5" stroke="#A67C52" stroke-width="1.2"/>
+            </svg>
+            <h4 data-i18n="taxi_title">Такси</h4>
+          </div>
+          <ul class="useful-links">
+            <li>
+              <a href="https://redirect.appmetrica.yandex.com/serve/1179424644219968227" target="_blank" rel="noopener" class="useful-link useful-link--yandex">
+                <svg viewBox="0 0 24 24" fill="#FC3F1D" aria-hidden="true" style="width:18px;height:18px;flex-shrink:0"><path d="M13.74 2H10.5c-3.5 0-5.5 1.8-5.5 4.7 0 2.3 1.1 3.7 3.3 5.1L5.6 22h3.1l2.5-9.7 1 .6L14.9 22H18l-2.9-10.1c1.8-1.2 2.9-3 2.9-5.2C18 3.8 16.3 2 13.74 2zm-.4 7.9l-1.1-.7V4.3h.9c1.6 0 2.5.9 2.5 2.5 0 1.3-.7 2.3-2.3 3.1z"/></svg>
+                Яндекс Go
+              </a>
+            </li>
+          </ul>
+          <p class="useful-note" data-i18n="taxi_note">Аэропорт → Novotel: ~35–40 мин, 600–800 сом</p>
+        </div>
+
+        <div class="useful-card">
+          <div class="useful-card__top">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="useful-card__icon" aria-hidden="true">
+              <circle cx="20" cy="20" r="16" stroke="#A67C52" stroke-width="1.2"/>
+              <path d="M14 14H26" stroke="#A67C52" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M14 19H26" stroke="#A67C52" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="20" y1="19" x2="20" y2="28" stroke="#A67C52" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <h4 data-i18n="curr_title">Валюта</h4>
+          </div>
+          <ul class="useful-links">
+            <li>
+              <a href="https://www.nbkr.kg/index.jsp?lang=RUS" target="_blank" rel="noopener" class="useful-link">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polygon points="4,8 12,4 12,12" fill="#A67C52"/></svg>
+                <span data-i18n="curr_nbkr">Курсы НБКР</span>
+              </a>
+            </li>
+          </ul>
+          <p class="useful-note" data-i18n="curr_note">Нацвалюта: Кыргызский сом (KGS)</p>
+        </div>
+
+        <div class="useful-card">
+          <div class="useful-card__top">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="useful-card__icon" aria-hidden="true">
+              <rect x="8" y="8" width="24" height="26" rx="2" stroke="#A67C52" stroke-width="1.2"/>
+              <line x1="20" y1="16" x2="20" y2="26" stroke="#A67C52" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="15" y1="21" x2="25" y2="21" stroke="#A67C52" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h4 data-i18n="pharm_title">Помощь</h4>
+          </div>
+          <ul class="useful-links">
+            <li><a href="tel:103" class="useful-link"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polygon points="4,8 12,4 12,12" fill="#A67C52"/></svg><span data-i18n="pharm_amb">Скорая: 103</span></a></li>
+            <li><a href="tel:112" class="useful-link"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polygon points="4,8 12,4 12,12" fill="#A67C52"/></svg><span data-i18n="pharm_112">Служба спасения: 112</span></a></li>
+          </ul>
+        </div>
+
+        <div class="useful-card">
+          <div class="useful-card__top">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="useful-card__icon" aria-hidden="true">
+              <rect x="4" y="14" width="32" height="22" rx="2" stroke="#A67C52" stroke-width="1.2"/>
+              <path d="M14 14V10H26V14" stroke="#A67C52" stroke-width="1.2"/>
+              <rect x="16" y="24" width="8" height="12" rx="1" stroke="#A67C52" stroke-width="1.1"/>
+            </svg>
+            <h4 data-i18n="hotel_title">Отель</h4>
+          </div>
+          <ul class="useful-links">
+            <li>
+              <a href="https://maps.app.goo.gl/jMW4d3X1Z9MX2Cru7" target="_blank" rel="noopener" class="useful-link">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><polygon points="4,8 12,4 12,12" fill="#A67C52"/></svg>
+                Novotel Bishkek
+              </a>
+            </li>
+          </ul>
+          <p class="useful-note" data-i18n="hotel_note">пр. Манаса, 16 · Wi-Fi · Парковка</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REGISTRATION ==================== -->
+  <section class="register section-pad" id="register">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="reg_label">Участие</p>
+        <h2 class="s-title" data-i18n="reg_title">Регистрация</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+      <div class="reg-wrap reveal">
+        <form class="reg-form" id="regForm" novalidate>
+          <div class="form-row">
+            <div class="fg">
+              <label for="fullname"><span data-i18n="f_name">ФИО</span> <span class="req">*</span></label>
+              <input type="text" id="fullname" name="fullname" required autocomplete="name" placeholder="Иванов Иван Иванович"/>
+            </div>
+            <div class="fg">
+              <label for="org"><span data-i18n="f_org">Организация</span> <span class="req">*</span></label>
+              <input type="text" id="org" name="org" required autocomplete="organization" placeholder="Нотариальная палата..."/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="fg">
+              <label for="pos" data-i18n="f_pos">Должность</label>
+              <input type="text" id="pos" name="pos" placeholder="Нотариус"/>
+            </div>
+            <div class="fg">
+              <label for="country"><span data-i18n="f_country">Страна</span> <span class="req">*</span></label>
+              <input type="text" id="country" name="country" required autocomplete="country-name" placeholder="Кыргызстан"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="fg">
+              <label for="email"><span data-i18n="f_email">Email</span> <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@mail.com"/>
+            </div>
+            <div class="fg">
+              <label for="phone"><span data-i18n="f_phone">Телефон</span> <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+996 (___) ___-___"/>
+            </div>
+          </div>
+          <div class="fg fg--full">
+            <label for="notes" data-i18n="f_notes">Дополнительные пожелания</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Диетическое питание, специальные требования..."></textarea>
+          </div>
+          <div class="form-check">
+            <label class="chk-label">
+              <input type="checkbox" id="privacy" name="privacy" required/>
+              <span class="chk-box"></span>
+              <span data-i18n="f_privacy">Согласен(а) на обработку персональных данных</span>
+            </label>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn--bronze btn--large" data-i18n="f_submit">Подать заявку</button>
+          </div>
+          <div class="form-ok" id="formOk" hidden>
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="20" stroke="#A67C52" stroke-width="1.5"/><polyline points="14,25 21,32 34,17" stroke="#A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p data-i18n="f_ok">Ваша заявка принята! Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MEDIA / GALLERY ==================== -->
+  <section class="media section-pad" id="media">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label s-label--lt" data-i18n="media_label">Фотогалерея</p>
+        <h2 class="s-title s-title--lt" data-i18n="media_title">Бишкек и Кыргызстан</h2>
+        <div class="s-orn" aria-hidden="true">
+          <svg viewBox="0 0 260 12" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="6" x2="100" y2="6" stroke="#A67C52" stroke-width="0.8"/><polygon points="107,6 114,2 121,6 114,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><rect x="125" y="3" width="6" height="6" transform="rotate(45 128 6)" fill="#A67C52" opacity="0.6"/><polygon points="138,6 145,2 152,6 145,10" fill="none" stroke="#A67C52" stroke-width="0.8"/><line x1="159" y1="6" x2="260" y2="6" stroke="#A67C52" stroke-width="0.8"/></svg>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <figure class="g-item">
+          <img src="/images/63c261d65d2a97b27d0a4eb9.1600x1200.jpeg" alt="Центр Бишкека" loading="lazy"/>
+          <figcaption data-i18n="photo1">Центр Бишкека — площадь Ала-Тоо</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="/images/2_A4h8PeK.width-800.png" alt="Парк Ала-Арча" loading="lazy"/>
+          <figcaption data-i18n="photo2">Природный парк «Ала-Арча»</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Озеро Иссык-Куль" loading="lazy"/>
+          <figcaption data-i18n="photo5">Озеро Иссык-Куль</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Традиционная юрта" loading="lazy"/>
+          <figcaption data-i18n="photo6">Традиционная кыргызская юрта</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden>
+      <div class="lb-bg" id="lbBg"></div>
+      <button class="lb-close" id="lbClose" aria-label="Закрыть">&times;</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Назад">&#8249;</button>
+      <div class="lb-body">
+        <img src="" alt="" id="lbImg"/>
+        <p class="lb-cap" id="lbCap"></p>
+      </div>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Вперёд">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- ==================== PARTNERS ==================== -->
+  <section class="partners section-pad" id="partners">
+    <svg class="partners__petro" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g stroke="#A67C52" fill="none" stroke-width="0.8">
+        <circle class="petro-circle" cx="75" cy="75" r="70"/>
+        <circle class="petro-circle" cx="75" cy="75" r="50"/>
+        <path class="petro-path" d="M75 5 L75 35 M75 115 L75 145 M5 75 L35 75 M115 75 L145 75"/>
+      </g>
+    </svg>
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="partners_label">Поддержка</p>
+        <h2 class="s-title" data-i18n="partners_title">Партнеры конференции</h2>
+      </div>
+      <div class="partners__grid stagger-children">
+        <div class="partner-card">
+          <div class="partner-card__placeholder" data-i18n="partner_placeholder">Логотип</div>
+          <span class="partner-card__name" data-i18n="partner1_name">Партнер 1</span>
+        </div>
+        <div class="partner-card">
+          <div class="partner-card__placeholder" data-i18n="partner_placeholder">Логотип</div>
+          <span class="partner-card__name" data-i18n="partner2_name">Партнер 2</span>
+        </div>
+        <div class="partner-card">
+          <div class="partner-card__placeholder" data-i18n="partner_placeholder">Логотип</div>
+          <span class="partner-card__name" data-i18n="partner3_name">Партнер 3</span>
+        </div>
+        <div class="partner-card">
+          <div class="partner-card__placeholder" data-i18n="partner_placeholder">Логотип</div>
+          <span class="partner-card__name" data-i18n="partner4_name">Партнер 4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTS ==================== -->
+  <section class="contacts section-pad" id="contacts">
+    <div class="container">
+      <div class="s-head reveal">
+        <p class="s-label" data-i18n="cont_label">Связь</p>
+        <h2 class="s-title" data-i18n="cont_title">Контакты</h2>
+      </div>
+      <div class="contacts__grid">
+        <div class="contacts__info reveal">
+          <div class="cb">
+            <h4 data-i18n="cb_organizer">Организатор</h4>
+            <p data-i18n="cb_org_name">Нотариальная палата Кыргызской Республики</p>
+            <p><a href="https://notariat.kg" target="_blank" rel="noopener">notariat.kg</a></p>
+          </div>
+          <div class="cb">
+            <h4 data-i18n="cb_venue">Место проведения</h4>
+            <p><a href="https://maps.app.goo.gl/jMW4d3X1Z9MX2Cru7" target="_blank" rel="noopener" class="map-link"><svg viewBox="0 0 16 16" fill="none" stroke="#A67C52" stroke-width="1.3" aria-hidden="true"><path d="M8 2C5.8 2 4 3.8 4 6.2c0 3.2 4 8 4 8s4-4.8 4-8C12 3.8 10.2 2 8 2z"/><circle cx="8" cy="6" r="1.5"/></svg><span data-i18n="cb_venue_name">Novotel Bishkek City Center</span></a></p>
+            <p>г. Бишкек, пр. Манаса, 16</p>
+          </div>
+          <div class="cb">
+            <h4 data-i18n="cb_resp">Ответственные</h4>
+            <p>Смаилова Айгуль<br><a href="https://wa.me/996705806640" class="big-tel wa-link"><svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" width="16" height="16"><path d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>+996 705 806 640</a></p>
+            <p>Асаналиева Жылдыз<br><a href="https://wa.me/996700199522" class="big-tel wa-link"><svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" width="16" height="16"><path d="M17.47 14.38c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.62.14-.18.28-.7.91-.86 1.1-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.29.28-.48.09-.19.05-.36-.02-.51-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16 0-.34-.01-.53-.01s-.48.07-.74.36c-.25.29-.97.95-.97 2.32 0 1.36.99 2.68 1.13 2.87.14.19 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.2 1.26.17 1.74.1.53-.08 1.65-.67 1.88-1.33.23-.65.23-1.21.16-1.33-.07-.12-.25-.19-.53-.33zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.82L0 24l6.35-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.88 0-3.64-.5-5.16-1.38l-.37-.22-3.77.97.99-3.67-.24-.38A9.95 9.95 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>+996 700 199 522</a></p>
+          </div>
+        </div>
+        <div class="contacts__map reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.0!2d74.5897!3d42.8746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec7b9b9b9b9b9%3A0x0!2sNovotel%20Bishkek%20City%20Center!5e0!3m2!1sru!2skg!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Novotel Bishkek на карте"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__orn" aria-hidden="true">
+      <svg viewBox="0 0 1200 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="8" x2="490" y2="8" stroke="#A67C52" stroke-width="0.5" opacity="0.4"/>
+        <polygon points="498,8 506,4 514,8 506,12" fill="none" stroke="#A67C52" stroke-width="0.7" opacity="0.4"/>
+        <rect x="518" y="5" width="6" height="6" transform="rotate(45 521 8)" fill="#A67C52" opacity="0.3"/>
+        <polygon points="528,8 536,4 544,8 536,12" fill="none" stroke="#A67C52" stroke-width="0.7" opacity="0.4"/>
+        <line x1="552" y1="8" x2="1200" y2="8" stroke="#A67C52" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <svg class="footer__seal" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="25" cy="25" r="22" stroke="#A67C52" stroke-width="1"/>
+              <circle cx="25" cy="25" r="16" stroke="#A67C52" stroke-width="0.5" stroke-dasharray="2 2"/>
+              <path d="M25 10L27.5 18.5L36.5 18.5L29.5 23.5L32 32L25 27L18 32L20.5 23.5L13.5 18.5L22.5 18.5Z" fill="#A67C52" opacity="0.8"/>
+            </svg>
+            <div>
+              <strong data-i18n="footer_org">Нотариальная палата КР</strong>
+              <span data-i18n="footer_conf">Конференция, 6–8 августа 2026</span>
+              <span data-i18n="footer_city">г. Бишкек, Кыргызстан</span>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h5 data-i18n="footer_nav">Навигация</h5>
+            <ul>
+              <li><a href="#about" data-i18n="nav_about">О конференции</a></li>
+              <li><a href="#program" data-i18n="nav_program">Программа</a></li>
+              <li><a href="#register" data-i18n="nav_register">Регистрация</a></li>
+              <li><a href="#contacts" data-i18n="nav_contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5 data-i18n="footer_contacts">Контакты</h5>
+            <ul>
+              <li><a href="https://wa.me/996705806640">+996 705 806 640</a></li>
+              <li><a href="https://wa.me/996700199522">+996 700 199 522</a></li>
+              <li><a href="https://notariat.kg" target="_blank" rel="noopener">notariat.kg</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h5 data-i18n="footer_links">Ссылки</h5>
+            <ul>
+              <li><a href="https://www.nbkr.kg" target="_blank" rel="noopener" data-i18n="link_nbkr">Нацбанк КР</a></li>
+              <li><a href="https://2gis.kg/bishkek" target="_blank" rel="noopener" data-i18n="link_2gis">2GIS Бишкек</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer_copy">&copy; 2026 Нотариальная палата Кыргызской Республики</p>
+        <p><a href="https://wa.me/996705806640">+996 705 806 640</a> &nbsp;·&nbsp; <a href="https://wa.me/996700199522">+996 700 199 522</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
